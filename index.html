@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trishabh Miraya | Everything That Matters</title>
+    <meta name="description"
+        content="Thoughtfully planned premium homes in the heart of Chembur. Thoughtful layouts. Practical amenities. A location that works for everyday living.">
+
+    <!-- Fonts -->
+    <link
+        href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&f[]=general-sans@500,400&f[]=clash-display@500,600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <!-- Preloads -->
+    <link rel="preload" href="images/image.png" as="image">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/919920387722" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i data-lucide="message-circle" style="width: 28px; height: 28px;"></i>
+    </a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <img src="images/Miraya_Logo.png" alt="Trishabh Miraya" class="logo-img">
+            </a>
+            <nav class="desktop-nav">
+                <a href="#homes">Homes</a>
+                <a href="#amenities">Amenities</a>
+                <a href="#location">Location</a>
+                <a href="#legacy">Legacy</a>
+            </nav>
+            <div class="header-actions" style="display: flex; align-items: center; gap: 1rem;">
+                <a href="#enquire" class="btn btn-primary nav-cta">Get Floor Plans</a>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i data-lucide="menu" style="width: 28px; height: 28px; color: var(--emerald-dark);"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-inner">
+            <button class="mobile-menu-close" aria-label="Close Menu">
+                <i data-lucide="x" style="width: 28px; height: 28px; color: var(--charcoal);"></i>
+            </button>
+            <nav class="mobile-nav">
+                <a href="#homes" class="mobile-nav-link">Homes</a>
+                <a href="#amenities" class="mobile-nav-link">Amenities</a>
+                <a href="#location" class="mobile-nav-link">Location</a>
+                <a href="#legacy" class="mobile-nav-link">Legacy</a>
+            </nav>
+        </div>
+    </div>
+
+    <main class="editorial-layout">
+        <!-- 01. Hero Section -->
+        <section class="hero bg-ivory board-section">
+            <div class="hero-visual-container reveal-fade">
+                <img src="images/image.png" alt="Trishabh Miraya Day View" class="hero-bg-img hero-day active">
+                <img src="images/extracted_brochure/page_13.png" alt="Trishabh Miraya Night View"
+                    class="hero-bg-img hero-night">
+
+
+                <!-- Day/Night View Switcher -->
+                <div class="hero-view-toggle">
+                    <button class="hero-toggle-btn active" data-view="day">Day View</button>
+                    <button class="hero-toggle-btn" data-view="night">Night View</button>
+                </div>
+            </div>
+
+            <div class="container hero-container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <h1 class="hero-title reveal-text">
+                            EVERYTHING<br>
+                            THAT<br>
+                            MATTERS.
+                        </h1>
+
+                        <!-- Gold Divider Line -->
+                        <div class="hero-title-divider reveal-fade"></div>
+
+                        <p class="hero-subtitle reveal-fade"
+                            style="font-family: var(--font-heading); font-size: clamp(1.1rem, 1.6vw, 1.4rem); font-weight: 500; color: var(--charcoal); margin-top: 1rem; margin-bottom: 0.75rem; max-width: 480px;">
+                            Thoughtfully planned homes in the heart of Chembur.
+                        </p>
+
+                        <p class="body-text reveal-fade"
+                            style="font-size: 0.95rem; opacity: 0.8; margin-bottom: 1.75rem; max-width: 480px; line-height: 1.6;">
+                            Thoughtful layouts. Practical amenities. A location that works for everyday living.
+                        </p>
+
+                        <div class="hero-ctas-panel-ref reveal-fade">
+                            <a href="#enquire" class="btn btn-primary btn-hero-wide"
+                                style="width: 100%; max-width: 480px; justify-content: space-between; padding: 1.5rem 2.5rem; font-weight: 700; margin-bottom: 0.75rem; background-color: var(--emerald); border-radius: 0; text-transform: uppercase; font-size: 0.9rem;">
+                                <span>Get Floor Plans &amp; Price Sheet</span>
+                                <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+                            </a>
+                            <div class="flex gap-4" style="width: 100%; max-width: 480px;">
+                                <a href="tel:+919920387722" class="btn btn-outline flex-1"
+                                    style="justify-content: center; padding: 1.25rem 0; border-radius: 0; border-color: rgba(0, 59, 54, 0.4); font-weight: 700; font-size: 0.85rem; background-color: transparent; text-transform: uppercase;"><i
+                                        data-lucide="phone" style="width: 15px; height: 15px; margin-right: 8px;"></i>
+                                    Call Now</a>
+                                <a href="https://wa.me/919920387722" class="btn btn-outline flex-1"
+                                    style="justify-content: center; padding: 1.25rem 0; border-radius: 0; border-color: rgba(0, 59, 54, 0.4); font-weight: 700; font-size: 0.85rem; background-color: transparent; text-transform: uppercase;"><i
+                                        data-lucide="message-circle"
+                                        style="width: 15px; height: 15px; margin-right: 8px;"></i> WhatsApp Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02. Is This Right For You? -->
+        <section id="intro" class="board-section section-padding bg-ivory relative" style="padding-top: 100px; padding-bottom: 100px;">
+            <div class="container">
+                <div class="section-label mb-8 reveal-fade">
+                    <span class="label-num" style="color: var(--gold);">02</span> <span class="label-text">IS THIS RIGHT FOR YOU?</span>
+                </div>
+
+                <h2 class="section-title reveal-text" style="font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 4vw, 4rem); max-width: 600px; margin-bottom: 1rem; line-height: 1.1;">
+                    Miraya is for<br>those who value
+                </h2>
+                <p class="body-text reveal-fade"
+                    style="font-size: 1.1rem; color: var(--charcoal); margin-bottom: 4rem; max-width: 500px; line-height: 1.6; font-weight: 500;">
+                    We've thoughtfully planned every detail so you can focus on what truly matters.
+                </p>
+
+                <div class="board-3-col reveal-stagger mb-12" style="gap: 2rem;">
+                    <!-- Card 1 -->
+                    <div class="value-card">
+                        <div class="value-card-icon">
+                            <i data-lucide="home" style="width: 36px; height: 36px; color: var(--gold); stroke-width: 1.5;"></i>
+                        </div>
+                        <h3 class="value-card-title">Well-planned homes</h3>
+                        <p class="value-card-desc">Smart layouts, no wasted space.<br>Homes designed for real life.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="value-card">
+                        <div class="value-card-icon">
+                            <i data-lucide="map-pin" style="width: 36px; height: 36px; color: var(--gold); stroke-width: 1.5;"></i>
+                        </div>
+                        <h3 class="value-card-title">Everyday convenience</h3>
+                        <p class="value-card-desc">Amenities and essentials<br>that make life easier.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="value-card">
+                        <div class="value-card-icon">
+                            <i data-lucide="building-2" style="width: 36px; height: 36px; color: var(--gold); stroke-width: 1.5;"></i>
+                        </div>
+                        <h3 class="value-card-title">A connected Chembur address</h3>
+                        <p class="value-card-desc">Well-connected, well-established,<br>well worth it.</p>
+                    </div>
+                </div>
+
+                <!-- Bottom overlap area -->
+                <div class="value-conclusion-grid mt-12">
+                    <div class="quote-box-wrap reveal-fade">
+                        <div class="quote-box">
+                            <div class="quote-icon">
+                                <i data-lucide="user" style="color: var(--gold); width: 22px; height: 22px; stroke-width: 2;"></i>
+                            </div>
+                            <div class="quote-divider"></div>
+                            <div class="quote-text">
+                                If that's what matters to you,<br>
+                                <strong>you're in the right place.</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-wrap reveal-fade">
+                        <!-- Using the family image -->
+                        <img src="images/Miraya_Brochure-Print-07.jpg" alt="Family living at Miraya" class="value-img object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03. What Really Matters? -->
+        <section class="board-section section-padding bg-ivory relative">
+            <div class="container">
+                <div class="section-label mb-12 reveal-fade">
+                    <span class="label-num" style="color: var(--gold);">03</span> <span class="label-text">WHAT REALLY MATTERS?</span>
+                </div>
+
+                <div class="matters-grid">
+                    <!-- Left Column -->
+                    <div class="matters-content">
+                        <h2 class="editorial-typography reveal-text" style="font-size: clamp(2.5rem, 4vw, 4.5rem); margin-bottom: 0.5rem;">The right location.<br>The right planning.<br>The right comfort.</h2>
+
+                        <div class="editorial-subheadline reveal-fade" style="font-size: clamp(1.5rem, 2.5vw, 2.5rem); margin-bottom: 2.5rem;">Not more. Just right.</div>
+
+                        <p class="body-text reveal-fade" style="max-width: 420px; font-size: 1.15rem; line-height: 1.6; margin-bottom: 4rem;">
+                            Miraya brings together the essentials of modern urban living — without unnecessary excess.
+                        </p>
+
+                        <!-- Icons Row -->
+                        <div class="matters-icons-row reveal-fade">
+                            <div class="matters-icon-item">
+                                <i data-lucide="map-pin" style="width: 36px; height: 36px; color: var(--gold); stroke-width: 1.5; margin-bottom: 1.25rem;"></i>
+                                <span>The right<br>location.</span>
+                            </div>
+                            <div class="matters-icon-item" style="border-left: 1px solid rgba(198, 160, 106, 0.3); padding-left: 2rem;">
+                                <i data-lucide="layout-dashboard" style="width: 36px; height: 36px; color: var(--gold); stroke-width: 1.5; margin-bottom: 1.25rem;"></i>
+                                <span>The right<br>planning.</span>
+                            </div>
+                            <div class="matters-icon-item" style="border-left: 1px solid rgba(198, 160, 106, 0.3); padding-left: 2rem;">
+                                <i data-lucide="sofa" style="width: 36px; height: 36px; color: var(--gold); stroke-width: 1.5; margin-bottom: 1.25rem;"></i>
+                                <span>The right<br>comfort.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column (Bento) -->
+                    <div class="matters-bento reveal-fade">
+                        <!-- Top Image -->
+                        <div class="matters-bento-top">
+                            <img src="images/Miraya_Brochure-Print-08.jpg" alt="Miraya Living Room" class="w-full h-full object-cover">
+                        </div>
+                        
+                        <div class="matters-bento-bottom">
+                            <!-- Bottom Left: Location Box -->
+                            <div class="matters-location-box">
+                                <div style="margin-bottom: 1.5rem;">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="var(--gold)" fill-opacity="0.2"></path>
+                                        <circle cx="12" cy="10" r="3" fill="var(--emerald-dark)"></circle>
+                                    </svg>
+                                </div>
+                                <h3>15TH ROAD,<br>CHEMBUR</h3>
+                                <p style="color: rgba(255, 255, 255, 0.85); margin: 0;">A connected neighbourhood that puts everything within easy reach.</p>
+                            </div>
+                            
+                            <!-- Bottom Right: Planning Box -->
+                            <div class="matters-planning-box">
+                                <div class="planning-content">
+                                    <h4 style="color: var(--gold); font-size: 0.85rem; letter-spacing: 0.1em; margin-bottom: 1.5rem; font-weight: 700; text-transform: uppercase;">SMARTLY PLANNED</h4>
+                                    <ul class="planning-list">
+                                        <li><i data-lucide="check" style="width: 16px; height: 16px; color: var(--emerald-dark);"></i> No wasted space</li>
+                                        <li><i data-lucide="check" style="width: 16px; height: 16px; color: var(--emerald-dark);"></i> Efficient layouts</li>
+                                        <li><i data-lucide="check" style="width: 16px; height: 16px; color: var(--emerald-dark);"></i> Thoughtful design</li>
+                                        <li><i data-lucide="check" style="width: 16px; height: 16px; color: var(--emerald-dark);"></i> Built for real life</li>
+                                    </ul>
+                                </div>
+                                <div class="planning-img-wrap" style="flex: 1.5;">
+                                    <img src="images/TM Floor Plan-01.png" alt="Floor Plan" class="w-full h-full object-contain" style="mix-blend-mode: multiply; filter: contrast(1.1) brightness(0.95);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04. Well-Designed Homes -->
+        <section id="homes" class="board-section section-padding bg-ivory relative" style="padding-top: 120px; padding-bottom: 120px;">
+            <div class="container">
+                <div class="section-label mb-12 reveal-fade">
+                    <span class="label-num" style="color: var(--gold);">04</span> <span class="label-text">WELL-DESIGNED HOMES</span>
+                </div>
+
+                <div class="homes-grid">
+                    <!-- Left Column -->
+                    <div class="homes-content">
+                        <h2 class="editorial-typography reveal-text" style="font-size: clamp(2.5rem, 4.5vw, 4.5rem); line-height: 1.15; margin-bottom: 1.5rem;">
+                            Flexi floor plans built<br>using advanced<br>PT slab design.
+                        </h2>
+                        <p class="body-text reveal-fade" style="font-size: 1.15rem; color: var(--charcoal); margin-bottom: 3rem; max-width: 480px; line-height: 1.6;">
+                            Thoughtfully designed 2 & 3 BHK homes with<br>flexible layouts, zero wastage, and maximum comfort.
+                        </p>
+
+                        <div class="homes-features-list reveal-stagger mb-10">
+                            <div class="feature-item">
+                                <i data-lucide="check-circle-2" style="color: var(--gold); stroke-width: 1.5; width: 24px; height: 24px;"></i>
+                                <span>No columns.</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="check-circle-2" style="color: var(--gold); stroke-width: 1.5; width: 24px; height: 24px;"></i>
+                                <span>No beam obstructions.</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="check-circle-2" style="color: var(--gold); stroke-width: 1.5; width: 24px; height: 24px;"></i>
+                                <span>Just clean, open layouts designed<br>for the way you live.</span>
+                            </div>
+                        </div>
+
+                        <div class="jodi-card reveal-fade">
+                            <div class="jodi-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="9" y1="3" x2="9" y2="21"></line>
+                                    <line x1="15" y1="3" x2="15" y2="21"></line>
+                                    <line x1="3" y1="9" x2="9" y2="9"></line>
+                                </svg>
+                            </div>
+                            <div class="jodi-text">
+                                Creative Jodi options available across<br>
+                                2, 3, 4 and 5 BHK configurations.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="homes-plan-card reveal-fade">
+                        <div class="plan-image-wrap">
+                            <img src="images/TM Floor Plan-01.png" alt="2 BHK Floor Plan" class="w-full h-full object-contain">
+                        </div>
+                        <div class="plan-specs">
+                            <div class="spec-bhk">2 BHK</div>
+                            <div class="spec-divider"></div>
+                            <div class="spec-item">
+                                <div class="spec-icon-row"><i data-lucide="bed-double"></i> <span class="spec-num">2</span></div>
+                                <span class="spec-label">Bedrooms</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon-row"><i data-lucide="bath"></i> <span class="spec-num">2</span></div>
+                                <span class="spec-label">Bathrooms</span>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon-row"><i data-lucide="car"></i> <span class="spec-num">1</span></div>
+                                <span class="spec-label">Car Parking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Benefits Row -->
+                <div class="homes-benefits-row reveal-fade mt-12">
+                    <div class="benefit-col">
+                        <div class="benefit-icon-circle">
+                            <i data-lucide="expand" style="color: var(--gold); stroke-width: 1.5; width: 20px; height: 20px;"></i>
+                        </div>
+                        <h4>More usable space</h4>
+                        <p>Efficient layouts that give you<br>more room to live.</p>
+                    </div>
+                    <div class="benefit-col">
+                        <div class="benefit-icon-circle">
+                            <i data-lucide="sun" style="color: var(--gold); stroke-width: 1.5; width: 20px; height: 20px;"></i>
+                        </div>
+                        <h4>Natural light & ventilation</h4>
+                        <p>Homes designed for brightness,<br>fresh air, and energy efficiency.</p>
+                    </div>
+                    <div class="benefit-col">
+                        <div class="benefit-icon-circle">
+                            <i data-lucide="sofa" style="color: var(--gold); stroke-width: 1.5; width: 20px; height: 20px;"></i>
+                        </div>
+                        <h4>Open living spaces</h4>
+                        <p>Fluid spaces that bring family<br>together, every day.</p>
+                    </div>
+                    <div class="benefit-col">
+                        <div class="benefit-icon-circle">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="9" y1="3" x2="9" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h4>Zero wastage</h4>
+                        <p>Every inch is thoughtfully<br>planned for your comfort.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05. Why This Matters -->
+        <section class="board-section section-padding bg-ivory relative" style="padding-top: 100px; padding-bottom: 120px;">
+            <div class="container relative z-10">
+                <div class="section-label mb-8 reveal-fade">
+                    <span class="label-num" style="color: var(--gold);">05</span> <span class="label-text">WHY THIS MATTERS</span>
+                </div>
+
+                <div class="why-matters-header mb-12">
+                    <h2 class="editorial-typography reveal-text" style="font-size: clamp(2.5rem, 4vw, 4.5rem); line-height: 1.15; margin-bottom: 1.5rem; color: var(--emerald-dark);">
+                        Thoughtful design.<br>Better everyday living.
+                    </h2>
+                    <p class="body-text reveal-fade" style="font-size: 1.15rem; color: var(--charcoal); max-width: 500px; line-height: 1.6;">
+                        Every square foot is planned with purpose so you get more comfort, more convenience, and more life.
+                    </p>
+                </div>
+
+                <!-- 3-Column Image Cards -->
+                <div class="why-matters-grid reveal-stagger">
+                    <!-- Card 1 -->
+                    <div class="why-card">
+                        <div class="why-card-img">
+                            <img src="images/Miraya_Brochure-Print-06.jpg" alt="Living Room" class="w-full h-full object-cover">
+                        </div>
+                        <div class="why-card-content">
+                            <div class="why-icon-box">
+                                <i data-lucide="sofa" style="color: var(--gold); stroke-width: 1.5; width: 24px; height: 24px;"></i>
+                            </div>
+                            <div class="why-text">
+                                <h4>Better furniture planning</h4>
+                                <p>Smart layouts that allow the perfect fit for your furniture and lifestyle.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="why-card">
+                        <div class="why-card-img">
+                            <img src="images/Miraya_Brochure-Print-08.jpg" alt="Dining Room" class="w-full h-full object-cover">
+                        </div>
+                        <div class="why-card-content">
+                            <div class="why-icon-box">
+                                <i data-lucide="expand" style="color: var(--gold); stroke-width: 1.5; width: 24px; height: 24px;"></i>
+                            </div>
+                            <div class="why-text">
+                                <h4>More usable space</h4>
+                                <p>Efficient use of every inch, so nothing goes to waste.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="why-card">
+                        <div class="why-card-img">
+                            <img src="images/Miraya_Brochure-Print-07.jpg" alt="Reading Room" class="w-full h-full object-cover">
+                        </div>
+                        <div class="why-card-content">
+                            <div class="why-icon-box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                                    <path d="M3 3v5h5"></path>
+                                </svg>
+                            </div>
+                            <div class="why-text">
+                                <h4>Flexibility as your needs evolve</h4>
+                                <p>Spaces designed to adapt with you through every stage of life.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Decorative Background Pattern -->
+            <div class="chevron-bg" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 300px; opacity: 0.15; pointer-events: none; z-index: 0; background-image: radial-gradient(var(--gold) 1px, transparent 1px); background-size: 20px 20px; mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)); -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));"></div>
+        </section>
+
+        <!-- 06. Designed For How You Live -->
+        <section class="board-section section-padding bg-ivory relative">
+            <div class="container">
+                <div class="section-label mb-12 reveal-fade">
+                    <span class="label-num">06</span> <span class="label-text">DESIGNED FOR HOW YOU LIVE</span>
+                </div>
+
+                <h2 class="section-title reveal-text" style="font-family: 'Playfair Display', serif; max-width: 600px;">
+                    Designed for How You Live
+                </h2>
+
+                <!-- Editorial Staggered Layout -->
+                <div class="editorial-gallery-stagger reveal-stagger">
+                    <div class="editorial-stagger-item">
+                        <div class="editorial-stagger-img-wrap" style="height: 480px;">
+                            <img src="images/Miraya_Brochure-Print-06.jpg" alt="Open living areas" class="parallax-img">
+                        </div>
+                        <div class="editorial-stagger-caption">Open living areas</div>
+                    </div>
+                    <div class="editorial-stagger-item">
+                        <div class="editorial-stagger-img-wrap" style="height: 480px;">
+                            <img src="images/Miraya_Brochure-Print-08.jpg" alt="Efficient room proportions"
+                                class="parallax-img">
+                        </div>
+                        <div class="editorial-stagger-caption">Efficient room proportions</div>
+                    </div>
+                    <div class="editorial-stagger-item">
+                        <div class="editorial-stagger-img-wrap" style="height: 480px;">
+                            <img src="images/Miraya_Brochure-Print-07.jpg" alt="Natural light and ventilation"
+                                class="parallax-img">
+                        </div>
+                        <div class="editorial-stagger-caption">Natural light and ventilation</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 07. Amenities -->
+        <section id="amenities" class="board-section section-padding bg-ivory relative">
+            <div class="container">
+                <div class="section-label mb-8 reveal-fade">
+                    <span class="label-num">07</span> <span class="label-text">WELL-PLANNED AMENITIES</span>
+                </div>
+
+                <h2 class="section-title reveal-text" style="max-width: 600px;">
+                    Curated spaces that elevate your everyday routine.
+                </h2>
+
+                <!-- Bento Grid of Large Cards -->
+                <div class="amenities-bento reveal-stagger">
+                    <!-- 1. Yoga Zone (Indoor) -->
+                    <div class="amenity-card-lg">
+                        <img src="images/Miraya_Brochure-Print-04.jpg" alt="Indoor Yoga Zone" class="amenity-card-img">
+                        <div class="amenity-card-overlay"></div>
+                        <div class="amenity-card-info">
+                            <h3 class="amenity-card-title">Indoor Yoga Zone</h3>
+                            <p class="amenity-card-desc">A serene, glass-walled studio facing lush greenery, optimized
+                                for morning yoga and meditation.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. Sky Deck & Pergola (Outdoor) -->
+                    <div class="amenity-card-lg">
+                        <img src="images/Miraya_Brochure-Print-01.jpg" alt="Sky Deck & Pergola"
+                            class="amenity-card-img">
+                        <div class="amenity-card-overlay"></div>
+                        <div class="amenity-card-info">
+                            <h3 class="amenity-card-title">Rooftop Sky Deck</h3>
+                            <p class="amenity-card-desc">An open-air timber deck with a custom pergola and seating,
+                                perfect for evening relaxation under the stars.</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. Fitness Studio / Gym -->
+                    <div class="amenity-card-lg">
+                        <img src="images/Miraya_Brochure-Print-02.jpg" alt="Fitness Gym" class="amenity-card-img">
+                        <div class="amenity-card-overlay"></div>
+                        <div class="amenity-card-info">
+                            <h3 class="amenity-card-title">Fitness Studio</h3>
+                            <p class="amenity-card-desc">Equipped with professional cardiovascular and strength-training
+                                systems to support your health goals.</p>
+                        </div>
+                    </div>
+
+                    <!-- 4. Kids Play Area -->
+                    <div class="amenity-card-lg">
+                        <img src="images/Miraya_Brochure-Print-03.jpg" alt="Kids Play Area" class="amenity-card-img">
+                        <div class="amenity-card-overlay"></div>
+                        <div class="amenity-card-info">
+                            <h3 class="amenity-card-title">Kids Play Area</h3>
+                            <p class="amenity-card-desc">A safe, rubberized-flooring outdoor playground designed for
+                                active, secure children's recreation.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5. Biometric / Smart Access -->
+                    <div class="amenity-card-lg">
+                        <img src="images/Miraya_Brochure-Print-05.jpg" alt="Biometric Smart Lock Access"
+                            class="amenity-card-img">
+                        <div class="amenity-card-overlay"></div>
+                        <div class="amenity-card-info">
+                            <h3 class="amenity-card-title">Biometric Security</h3>
+                            <p class="amenity-card-desc">Smart biometric entry locks and 24/7 integrated surveillance
+                                for complete peace of mind.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 08. Location -->
+        <section id="location" class="loc-section bg-ivory relative">
+            <!-- TOP TWO-COLUMN GRID -->
+            <div class="loc-top-grid">
+
+                <!-- LEFT PANEL -->
+                <div class="loc-left-panel reveal-fade">
+                    <div class="section-label mb-8">
+                        <span class="label-num">08</span>
+                        <span class="label-text">THE RIGHT LOCATION</span>
+                    </div>
+
+                    <h2 class="loc-serif-title reveal-text">
+                        Connected to<br>everything that<br>matters.
+                    </h2>
+
+                    <p class="loc-body-text">
+                        Miraya is perfectly positioned in Chembur —
+                        offering seamless connectivity to business
+                        districts, lifestyle hubs, schools, hospitals,
+                        and everyday conveniences.
+                    </p>
+
+                    <!-- Address card -->
+                    <div class="loc-address-card">
+                        <div class="loc-addr-header">
+                            <div class="loc-addr-pin">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="rgba(198,160,106,0.15)"></path>
+                                    <circle cx="12" cy="10" r="3" fill="var(--gold)"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="loc-addr-title">15th Road, Chembur</div>
+                                <div class="loc-addr-sub">A well-connected address for a well-balanced life.</div>
+                            </div>
+                        </div>
+
+                        <ul class="loc-addr-list">
+                            <li class="loc-addr-item">
+                                <i data-lucide="train-front" class="loc-addr-icon"></i>
+                                <span class="loc-addr-place">Chembur Railway Station</span>
+                                <span class="loc-addr-time loc-time-hi">5 mins</span>
+                            </li>
+                            <li class="loc-addr-item">
+                                <i data-lucide="navigation" class="loc-addr-icon"></i>
+                                <span class="loc-addr-place">Eastern Express Highway</span>
+                                <span class="loc-addr-time loc-time-hi">8 mins</span>
+                            </li>
+                            <li class="loc-addr-item">
+                                <i data-lucide="plane" class="loc-addr-icon"></i>
+                                <span class="loc-addr-place">BKC</span>
+                                <span class="loc-addr-time">20 mins</span>
+                            </li>
+                            <li class="loc-addr-item">
+                                <i data-lucide="graduation-cap" class="loc-addr-icon"></i>
+                                <span class="loc-addr-place">Top Schools &amp; Colleges</span>
+                                <span class="loc-addr-time">5–10 mins</span>
+                            </li>
+                            <li class="loc-addr-item">
+                                <i data-lucide="cross" class="loc-addr-icon"></i>
+                                <span class="loc-addr-place">Hospitals</span>
+                                <span class="loc-addr-time">5–10 mins</span>
+                            </li>
+                            <li class="loc-addr-item">
+                                <i data-lucide="shopping-bag" class="loc-addr-icon"></i>
+                                <span class="loc-addr-place">Phoenix Marketcity</span>
+                                <span class="loc-addr-time">12 mins</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- RIGHT MAP PANEL -->
+                <div class="loc-map-panel reveal-fade">
+                    <div class="loc-map-wrap">
+                        <img src="images/extracted_brochure/page_11.png" alt="Trishabh Miraya Location Map — Chembur" class="loc-map-img">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BOTTOM DARK GREEN BAR -->
+            <div class="loc-bottom-bar">
+                <div class="loc-bottom-inner">
+                    <div class="loc-bottom-tagline">
+                        <div>Every destination.</div>
+                        <div>Within easy reach.</div>
+                    </div>
+                    <div class="loc-bottom-divider"></div>
+                    <div class="loc-bottom-icons">
+                        <div class="loc-bottom-item">
+                            <i data-lucide="train-front" class="loc-bi"></i>
+                            <div class="loc-bi-time">5 mins</div>
+                            <div class="loc-bi-label">Chembur<br>Railway Station</div>
+                        </div>
+                        <div class="loc-bottom-item">
+                            <i data-lucide="navigation" class="loc-bi"></i>
+                            <div class="loc-bi-time">8 mins</div>
+                            <div class="loc-bi-label">Eastern Express<br>Highway</div>
+                        </div>
+                        <div class="loc-bottom-item">
+                            <i data-lucide="plane" class="loc-bi"></i>
+                            <div class="loc-bi-time">20 mins</div>
+                            <div class="loc-bi-label">BKC</div>
+                        </div>
+                        <div class="loc-bottom-item">
+                            <i data-lucide="graduation-cap" class="loc-bi"></i>
+                            <div class="loc-bi-time">5–10 mins</div>
+                            <div class="loc-bi-label">Schools &amp;<br>Colleges</div>
+                        </div>
+                        <div class="loc-bottom-item">
+                            <i data-lucide="cross" class="loc-bi"></i>
+                            <div class="loc-bi-time">5–10 mins</div>
+                            <div class="loc-bi-label">Hospitals</div>
+                        </div>
+                        <div class="loc-bottom-item">
+                            <i data-lucide="shopping-bag" class="loc-bi"></i>
+                            <div class="loc-bi-time">12 mins</div>
+                            <div class="loc-bi-label">Phoenix<br>Marketcity</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Separator to prevent merging of dark sections -->
+        <div style="background-color: var(--ivory); height: 5rem; width: 100%;"></div>
+
+        <!-- 09. Legacy -->
+        <section id="legacy" class="relative text-white" style="background-color: var(--emerald-dark); padding: 6rem 0; overflow: hidden;">
+            <div class="container" style="max-width: 1300px; margin: 0 auto; padding: 0 2rem;">
+                <div class="section-label mb-12 reveal-fade">
+                    <span class="label-num" style="color: var(--gold);">09</span> 
+                    <span class="label-text" style="color: var(--white); opacity: 0.8; letter-spacing: 0.15em;">BUILT ON EXPERIENCE</span>
+                </div>
+
+                <div class="legacy-grid" style="display: grid; grid-template-columns: 1fr; gap: 4rem; align-items: center;">
+                    <div class="legacy-content reveal-fade">
+                        <h2 class="section-title reveal-text" style="font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 4vw, 4.5rem); color: var(--white); line-height: 1.1; margin-bottom: 2rem;">
+                            Over two decades of delivery.
+                        </h2>
+                        <p class="body-text mb-12" style="font-size: 1.1rem; line-height: 1.7; color: var(--beige-light); opacity: 0.9; max-width: 540px; margin-bottom: 4rem;">
+                            Trishabh Group, established in 1999, has built a legacy of premium quality execution and customer-first compliance across Mumbai and Navi Mumbai.
+                        </p>
+
+                        <div class="legacy-stats-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 3.5rem 2.5rem;">
+                            <div class="legacy-stat-item" style="border-left: 2px solid var(--gold); padding-left: 1.5rem;">
+                                <div class="legacy-stat-num" style="font-family: 'Outfit', sans-serif; font-size: clamp(3rem, 4vw, 4.5rem); font-weight: 400; color: var(--gold); line-height: 1;">20+</div>
+                                <div class="legacy-stat-label" style="font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); font-weight: 600; margin-top: 0.75rem; opacity: 0.9; line-height: 1.4;">Years of<br>Legacy</div>
+                            </div>
+                            <div class="legacy-stat-item" style="border-left: 2px solid var(--gold); padding-left: 1.5rem;">
+                                <div class="legacy-stat-num" style="font-family: 'Outfit', sans-serif; font-size: clamp(3rem, 4vw, 4.5rem); font-weight: 400; color: var(--gold); line-height: 1;">15+</div>
+                                <div class="legacy-stat-label" style="font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); font-weight: 600; margin-top: 0.75rem; opacity: 0.9; line-height: 1.4;">Projects<br>Delivered</div>
+                            </div>
+                            <div class="legacy-stat-item" style="border-left: 2px solid var(--gold); padding-left: 1.5rem;">
+                                <div class="legacy-stat-num" style="font-family: 'Outfit', sans-serif; font-size: clamp(3rem, 4vw, 4.5rem); font-weight: 400; color: var(--gold); line-height: 1;">100%</div>
+                                <div class="legacy-stat-label" style="font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); font-weight: 600; margin-top: 0.75rem; opacity: 0.9; line-height: 1.4;">OC Received<br>Track Record</div>
+                            </div>
+                            <div class="legacy-stat-item" style="border-left: 2px solid var(--gold); padding-left: 1.5rem;">
+                                <div class="legacy-stat-num" style="font-family: 'Outfit', sans-serif; font-size: clamp(3rem, 4vw, 4.5rem); font-weight: 400; color: var(--gold); line-height: 1;">500+</div>
+                                <div class="legacy-stat-label" style="font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); font-weight: 600; margin-top: 0.75rem; opacity: 0.9; line-height: 1.4;">Satisfied<br>Homeowners</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="legacy-image-wrap reveal-fade" style="position: relative; border-radius: 4px; overflow: hidden; height: 500px; box-shadow: 0 25px 50px rgba(0,0,0,0.3);">
+                        <img src="images/extracted_brochure/page_06.png" alt="Trishabh Group Legacy Project" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+                    </div>
+                </div>
+            </div>
+            <style>
+                @media (min-width: 1024px) {
+                    .legacy-grid {
+                        grid-template-columns: 1.1fr 0.9fr !important;
+                    }
+                    .legacy-image-wrap {
+                        height: 600px !important;
+                    }
+                }
+            </style>
+        </section>
+
+        <!-- 10. Why Buyers Choose Miraya -->
+        <section class="section-padding bg-ivory relative" style="padding: 8rem 0;">
+            <div class="container" style="max-width: 1400px; margin: 0 auto; padding: 0 2rem;">
+                <div class="choose-premium-grid" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 6rem; align-items: center;">
+                    <!-- Image side -->
+                    <div class="choose-image-side reveal-fade" style="position: relative;">
+                        <div class="section-label mb-10">
+                            <span class="label-num">10</span> <span class="label-text">WHY BUYERS CHOOSE MIRAYA</span>
+                        </div>
+                        <h2 class="section-title" style="font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 4vw, 3.8rem); color: var(--emerald-dark); line-height: 1.15; margin-bottom: 3rem;">
+                            Designed around<br><i style="font-family: 'Playfair Display', serif; color: var(--gold); font-style: italic; font-weight: 400;">how you live.</i>
+                        </h2>
+                        <div style="position: relative; border-radius: 4px; overflow: hidden; height: 550px; box-shadow: 0 30px 60px rgba(0,0,0,0.08);">
+                            <img src="images/image.png" alt="Miraya Interior Lifestyle" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+
+                    <!-- Points side -->
+                    <div class="choose-points-side reveal-stagger" style="display: flex; flex-direction: column; gap: 3.5rem; padding-top: 4rem;">
+                        
+                        <div class="choose-premium-point" style="display: flex; gap: 2.5rem; align-items: flex-start; border-bottom: 1px solid rgba(198,160,106,0.25); padding-bottom: 3.5rem;">
+                            <div class="point-icon" style="color: var(--gold); background: var(--emerald-dark); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 10px 20px rgba(7,38,30,0.15);">
+                                <i data-lucide="layout" style="width: 32px; height: 32px; stroke-width: 1.5;"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--emerald-dark); font-weight: 500; margin-bottom: 0.75rem;">Practical Layouts</h3>
+                                <p style="font-size: 1.15rem; color: var(--charcoal); opacity: 0.8; line-height: 1.6;">Over wasted space</p>
+                            </div>
+                        </div>
+
+                        <div class="choose-premium-point" style="display: flex; gap: 2.5rem; align-items: flex-start; border-bottom: 1px solid rgba(198,160,106,0.25); padding-bottom: 3.5rem;">
+                            <div class="point-icon" style="color: var(--gold); background: var(--emerald-dark); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 10px 20px rgba(7,38,30,0.15);">
+                                <i data-lucide="sparkles" style="width: 32px; height: 32px; stroke-width: 1.5;"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--emerald-dark); font-weight: 500; margin-bottom: 0.75rem;">Everyday Comfort</h3>
+                                <p style="font-size: 1.15rem; color: var(--charcoal); opacity: 0.8; line-height: 1.6;">Over show amenities</p>
+                            </div>
+                        </div>
+
+                        <div class="choose-premium-point" style="display: flex; gap: 2.5rem; align-items: flex-start;">
+                            <div class="point-icon" style="color: var(--gold); background: var(--emerald-dark); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 10px 20px rgba(7,38,30,0.15);">
+                                <i data-lucide="navigation" style="width: 32px; height: 32px; stroke-width: 1.5;"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--emerald-dark); font-weight: 500; margin-bottom: 0.75rem;">A Location That Works</h3>
+                                <p style="font-size: 1.15rem; color: var(--charcoal); opacity: 0.8; line-height: 1.6;">For daily life</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <style>
+                @media (max-width: 1023px) {
+                    .choose-premium-grid {
+                        grid-template-columns: 1fr !important;
+                        gap: 4rem !important;
+                    }
+                    .choose-points-side {
+                        padding-top: 0 !important;
+                    }
+                }
+            </style>
+        </section>
+
+        <!-- 11. Final CTA -->
+        <section id="enquire" class="relative section-padding" style="background-color: var(--ivory); overflow: hidden; padding: 6rem 0 4rem;">
+            
+            <!-- Background Image that fades into the left -->
+            <div class="cta-bg-image-wrapper" style="position: absolute; top: 0; right: 0; width: 55%; height: 90%; z-index: 1;">
+                <img src="images/Miraya_Brochure-Print-07.jpg" alt="Miraya Interior" style="width: 100%; height: 100%; object-fit: cover; object-position: right center;">
+                <div class="cta-bg-fade-left" style="position: absolute; top: 0; left: 0; width: 40%; height: 100%; background: linear-gradient(to right, var(--ivory) 0%, transparent 100%);"></div>
+                <div class="cta-bg-fade-bottom" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 40%; background: linear-gradient(to top, var(--ivory) 0%, transparent 100%);"></div>
+            </div>
+
+            <div class="container relative" style="z-index: 5; max-width: 1400px; margin: 0 auto; padding: 0 2rem;">
+                
+                <!-- Top Text Content -->
+                <div class="cta-top-content" style="max-width: 550px; margin-bottom: 4rem;">
+                    <div class="section-label mb-8">
+                        <span class="label-num" style="color: var(--gold);">11</span> <span class="label-text" style="color: var(--emerald-dark); letter-spacing: 0.15em;">YOUR NEXT STEP</span>
+                    </div>
+
+                    <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(3.5rem, 5vw, 4.5rem); color: var(--emerald-dark); line-height: 1.1; margin-bottom: 2rem;">
+                        Everything<br>that matters.
+                    </h2>
+                    
+                    <p style="font-size: 1.1rem; line-height: 1.6; color: var(--charcoal); opacity: 0.8; margin-bottom: 3rem; max-width: 480px;">
+                        Register now to request floor plans, configure Jodi layouts, check pricing, and schedule a private site preview. Our team is here to help you.
+                    </p>
+
+                    <!-- Icons Row -->
+                    <div class="cta-icons-row" style="display: flex; gap: 2.5rem; border-top: 1px solid rgba(198,160,106,0.3); border-bottom: 1px solid rgba(198,160,106,0.3); padding: 2rem 0;">
+                        <div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
+                            <div style="width: 45px; height: 45px; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--emerald-dark);">
+                                <i data-lucide="file-text" style="width: 20px; height: 20px;"></i>
+                            </div>
+                            <span style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--emerald-dark); line-height: 1.3;">Detailed<br>Floor Plans</span>
+                        </div>
+                        <div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
+                            <div style="width: 45px; height: 45px; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--emerald-dark);">
+                                <i data-lucide="indian-rupee" style="width: 20px; height: 20px;"></i>
+                            </div>
+                            <span style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--emerald-dark); line-height: 1.3;">Transparent<br>Pricing</span>
+                        </div>
+                        <div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
+                            <div style="width: 45px; height: 45px; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--emerald-dark);">
+                                <i data-lucide="badge-check" style="width: 20px; height: 20px;"></i>
+                            </div>
+                            <span style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--emerald-dark); line-height: 1.3;">Latest<br>Offers</span>
+                        </div>
+                        <div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
+                            <div style="width: 45px; height: 45px; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--emerald-dark);">
+                                <i data-lucide="headphones" style="width: 20px; height: 20px;"></i>
+                            </div>
+                            <span style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--emerald-dark); line-height: 1.3;">Expert<br>Assistance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Form Card -->
+                <div class="cta-floating-card" style="background: var(--white); border-radius: 12px; box-shadow: 0 30px 60px rgba(0,0,0,0.1); padding: 3.5rem; position: relative; z-index: 10; display: grid; grid-template-columns: 1fr 2.5fr; gap: 4rem; align-items: stretch;">
+                    
+                    <!-- Left Side of Form Card -->
+                    <div style="border-right: 1px solid rgba(0,0,0,0.1); padding-right: 3rem; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <div style="background: var(--emerald-dark); color: var(--gold); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <i data-lucide="calendar" style="width: 24px; height: 24px;"></i>
+                                </div>
+                                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--emerald-dark); margin: 0;">Book a Visit</h3>
+                            </div>
+                            <p style="font-size: 0.95rem; line-height: 1.6; color: var(--charcoal); opacity: 0.8; margin-bottom: 2rem;">
+                                Visit our experience center and take a closer look at Miraya.
+                            </p>
+                        </div>
+                        <a href="#enquire" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; width: 100%; padding: 1.1rem; border: 1px solid var(--gold); color: var(--gold); border-radius: 4px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; transition: 0.3s ease;">
+                            <i data-lucide="calendar-days" style="width: 18px; height: 18px;"></i> BOOK A SITE VISIT
+                        </a>
+                    </div>
+
+                    <!-- Right Side (Form) -->
+                    <div>
+                        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--emerald-dark); margin-bottom: 2rem; margin-top: 0;">Get Floor Plans & Price Sheet</h3>
+                        <form style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem;">
+                            <input type="text" placeholder="Full Name" style="padding: 1rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none;">
+                            <input type="tel" placeholder="Phone Number" style="padding: 1rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none;">
+                            <input type="email" placeholder="Email Address" style="padding: 1rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none;">
+                            
+                            <select style="padding: 1rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none; background: #fff; color: #666;">
+                                <option>I am interested in</option>
+                                <option>2 BHK</option>
+                                <option>3 BHK</option>
+                                <option>Jodi Flat</option>
+                            </select>
+                            
+                            <input type="text" placeholder="Message (Optional)" style="grid-column: span 2; padding: 1rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none;">
+                            
+                            <div style="grid-column: span 3; display: flex; align-items: center; justify-content: space-between; margin-top: 1rem;">
+                                <label style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; color: var(--charcoal); opacity: 0.7; cursor: pointer;">
+                                    <input type="checkbox" checked style="width: 16px; height: 16px; accent-color: var(--emerald-dark);">
+                                    I agree to receive updates & offers from Trishabh Miraya.
+                                </label>
+                                <button type="submit" style="background: var(--emerald-dark); color: var(--white); padding: 1.1rem 2rem; border-radius: 4px; border: none; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 0.5rem; cursor: pointer; transition: 0.3s ease;">
+                                    GET FLOOR PLANS & PRICE SHEET <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Bottom Contact Strip -->
+                <div class="cta-bottom-strip" style="display: flex; align-items: center; justify-content: space-between; border: 1px solid rgba(198,160,106,0.3); border-radius: 8px; padding: 1.5rem 3rem; margin-top: 2rem; background: rgba(255,255,255,0.6);">
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="background: var(--emerald-dark); color: var(--white); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i data-lucide="phone" style="width: 14px; height: 14px;"></i>
+                        </div>
+                        <span style="font-size: 0.9rem; font-weight: 500; color: var(--charcoal);">Call us: +91 91520 87872</span>
+                    </div>
+                    <div style="width: 1px; height: 24px; background: rgba(198,160,106,0.3);"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="background: var(--emerald-dark); color: var(--white); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i data-lucide="message-circle" style="width: 14px; height: 14px;"></i>
+                        </div>
+                        <span style="font-size: 0.9rem; font-weight: 500; color: var(--charcoal);">WhatsApp us</span>
+                    </div>
+                    <div style="width: 1px; height: 24px; background: rgba(198,160,106,0.3);"></div>
+                    <div style="font-size: 0.9rem; font-weight: 500; color: var(--charcoal);">
+                        RERA No.: P51800055499
+                    </div>
+                    <div style="width: 1px; height: 24px; background: rgba(198,160,106,0.3);"></div>
+                    <a href="#" style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; font-weight: 500; color: var(--charcoal); text-decoration: none;">
+                        WBRERA Website <i data-lucide="external-link" style="width: 14px; height: 14px; color: var(--emerald-dark);"></i>
+                    </a>
+                </div>
+
+            </div>
+            <style>
+                @media (max-width: 1024px) {
+                    .cta-floating-card {
+                        grid-template-columns: 1fr !important;
+                        gap: 2.5rem !important;
+                        padding: 2.5rem !important;
+                    }
+                    .cta-floating-card > div:first-child {
+                        border-right: none !important;
+                        border-bottom: 1px solid rgba(0,0,0,0.1);
+                        padding-right: 0 !important;
+                        padding-bottom: 2.5rem;
+                    }
+                    .cta-floating-card form {
+                        grid-template-columns: 1fr !important;
+                    }
+                    .cta-floating-card form select, .cta-floating-card form input[type="text"]:last-of-type {
+                        grid-column: span 1 !important;
+                    }
+                    .cta-floating-card form > div:last-child {
+                        grid-column: span 1 !important;
+                        flex-direction: column;
+                        align-items: stretch !important;
+                        gap: 1.5rem;
+                    }
+                    .cta-bg-image-wrapper {
+                        position: relative !important;
+                        width: 100% !important;
+                        height: 400px !important;
+                        margin-bottom: 2rem;
+                    }
+                    .cta-bg-fade-left {
+                        background: linear-gradient(to top, var(--ivory) 0%, transparent 100%) !important;
+                        width: 100% !important;
+                        height: 50% !important;
+                        top: auto !important;
+                        bottom: 0 !important;
+                    }
+                    .cta-icons-row {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+                    .cta-bottom-strip {
+                        flex-direction: column;
+                        gap: 1.5rem;
+                        text-align: center;
+                    }
+                    .cta-bottom-strip > div[style*="width: 1px"] {
+                        display: none;
+                    }
+                }
+            </style>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/Miraya_Logo_White.png" alt="Trishabh Miraya Logo" class="footer-logo">
+                    <p class="footer-text"
+                        style="font-size: 0.65rem; letter-spacing: 0.15em; font-weight: 700; opacity: 0.6;">A PROJECT BY
+                    </p>
+                    <img src="images/trishabh group logo.png" alt="Trishabh Group" class="footer-dev-logo">
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Corporate Office</h4>
+                    <p class="footer-text">
+                        4, Rishabh shopping centre,<br>
+                        Opp. Gulmarg society,<br>
+                        Nr. VNP & RC marg, monorail station,<br>
+                        Chembur naka, Chembur (E), Mumbai 400 071.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Site Address</h4>
+                    <p class="footer-text">
+                        Trishabh Miraya, 48-B, Road No. 15,<br>
+                        Chembur Gaothan, Chembur,<br>
+                        Mumbai, Maharashtra 400071
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">MahaRERA Registration</h4>
+                    <p class="footer-text" style="margin-bottom: 1rem;">
+                        MAHA RERA NO: PR1181012502085
+                    </p>
+                    <p class="footer-text" style="font-size: 0.75rem; opacity: 0.6;">
+                        Available on the MAHARERA website under registered projects.
+                    </p>
+                </div>
+
+                <div class="footer-disclaimer">
+                    This advertisement does not constitute an offer or contract of any nature whatsoever between the
+                    Promoters/Developers and the recipient. All transactions shall be subject to the terms and
+                    conditions of the agreement for sale to be entered into between the promoter and the recipient. The
+                    images, renderings, plans and other details shown are for representation purposes only and may be
+                    subject to change.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
