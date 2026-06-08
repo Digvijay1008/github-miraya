@@ -236,4 +236,49 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
+
+    // 9. Scroll Popup Logic
+    let popupShown = false;
+    const scrollPopup = document.getElementById('scrollPopup');
+    const popupCloseBtn = document.querySelector('.scroll-popup-close');
+    
+    if (scrollPopup) {
+        ScrollTrigger.create({
+            trigger: "#intro",
+            start: "bottom center",
+            onEnter: () => {
+                if (!popupShown) {
+                    scrollPopup.classList.add('active');
+                    popupShown = true;
+                }
+            }
+        });
+        
+        popupCloseBtn?.addEventListener('click', () => {
+            scrollPopup.classList.remove('active');
+        });
+        
+        scrollPopup.addEventListener('click', (e) => {
+            if (e.target === scrollPopup) {
+                scrollPopup.classList.remove('active');
+            }
+        });
+    }
 });
+
+// Global Lightbox Functions
+function openLightbox(src) {
+    const lightbox = document.getElementById('imageLightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    if (lightbox && lightboxImg) {
+        lightbox.style.display = "block";
+        lightboxImg.src = src;
+    }
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('imageLightbox');
+    if (lightbox) {
+        lightbox.style.display = "none";
+    }
+}
