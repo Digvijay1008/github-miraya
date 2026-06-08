@@ -26,10 +26,17 @@
     <meta name="twitter:image" content="images/Miraya_Brochure-Print-07.jpg">
 
     <!-- Fonts -->
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&f[]=general-sans@500,400&f[]=clash-display@500,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- Asynchronous Font Loading -->
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&f[]=general-sans@500,400&f[]=clash-display@500,600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&f[]=general-sans@500,400&f[]=clash-display@500,600&display=swap" rel="stylesheet"></noscript>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"></noscript>
     
     <!-- Preloads for Performance -->
     <link rel="preload" href="images/Make_cloud_moves_building_202606082217.mp4" as="video" type="video/mp4">
@@ -100,7 +107,7 @@
         <!-- 01. Hero Section -->
         <section class="hero bg-ivory board-section">
             <div class="hero-visual-container reveal-fade">
-                <video class="hero-bg-video" autoplay loop muted playsinline>
+                <video class="hero-bg-video" autoplay loop muted playsinline poster="images/image.png">
                     <source src="images/Make_cloud_moves_building_202606082217.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -929,7 +936,7 @@
 
     <!-- Lightbox Overlay -->
     <div id="imageLightbox" class="lightbox-overlay" onclick="closeLightbox()">
-        <span class="lightbox-close">&times;</span>
+        <span class="lightbox-close" role="button" aria-label="Close image gallery">&times;</span>
         <img loading="lazy" class="lightbox-content" id="lightboxImg">
     </div>
 

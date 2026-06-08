@@ -74,6 +74,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // 4. GSAP Animations (Emil Kowalski & Taste Skill principles)
     const cinematicEase = "power3.out";
 
+    // Defer heavy GSAP/ScrollTrigger initializations to avoid forced reflows during initial paint
+    window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => {
+
     // Reveal Text (Lines sliding up)
     const revealTexts = document.querySelectorAll('.reveal-text');
     revealTexts.forEach((text) => {
@@ -264,6 +268,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+        }); // End inner rAF
+    }); // End outer rAF
 });
 
 // Global Lightbox Functions
