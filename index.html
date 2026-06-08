@@ -9,8 +9,8 @@
     <meta name="keywords" content="Trishabh Miraya, Chembur real estate, premium homes Chembur, luxury apartments Mumbai, Trishabh Group, 3BHK Chembur, new projects in Chembur">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/Miraya_Logo.png">
-    <link rel="apple-touch-icon" href="images/Miraya_Logo.png">
+    <link rel="icon" type="image/png" href="images/Miraya_Logo_small.png">
+    <link rel="apple-touch-icon" href="images/Miraya_Logo_small.png">
 
     <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website">
@@ -39,8 +39,8 @@
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"></noscript>
     
     <!-- Preloads for Performance -->
-    <link rel="preload" href="images/Make_cloud_moves_building_202606082217.mp4" as="video" type="video/mp4">
-    <link rel="preload" href="images/Miraya_Logo.png" as="image">
+    <link rel="preload" href="images/image-poster.jpg" as="image">
+    <link rel="preload" href="images/Miraya_Logo_small.png" as="image">
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
@@ -66,11 +66,11 @@
         <div class="container header-inner">
             <div class="logo" style="display: flex; align-items: center; gap: 1rem;">
                 <a href="#">
-                    <img src="images/Miraya_Logo.png" alt="Trishabh Miraya" class="logo-img">
+                    <img src="images/Miraya_Logo_small.png" alt="Trishabh Miraya" class="logo-img" width="150" height="97">
                 </a>
                 <span style="font-size: 0.85rem; color: var(--emerald-dark); opacity: 0.4; font-weight: 400; font-family: sans-serif;">✕</span>
                 <a href="https://www.trishabh.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="images/trishabh group logo.png" alt="Trishabh Group" class="logo-img-secondary">
+                    <img src="images/trishabh_group_logo_small.png" alt="Trishabh Group" class="logo-img-secondary" width="135" height="72">
                 </a>
             </div>
             <nav class="desktop-nav">
@@ -107,9 +107,9 @@
         <!-- 01. Hero Section -->
         <section class="hero bg-ivory board-section">
             <div class="hero-visual-container reveal-fade">
-                <video class="hero-bg-video" autoplay loop muted playsinline poster="images/image.png">
-                    <source src="images/Make_cloud_moves_building_202606082217.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                <img src="images/image-poster.jpg" alt="Trishabh Miraya Premium Homes in Chembur" class="hero-bg-video hero-poster-img" width="800" height="533" fetchpriority="high">
+                <video class="hero-bg-video hero-lazy-video" autoplay loop muted playsinline style="display:none;">
+                    <source data-src="images/Make_cloud_moves_building_202606082217.mp4" type="video/mp4">
                 </video>
             </div>
 
@@ -770,7 +770,7 @@
                             <input type="tel" placeholder="Phone Number" style="padding: 1rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none;">
                             <input type="email" placeholder="Email Address" style="padding: 1rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none;">
                             
-                            <select style="padding: 1rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none; background: #fff; color: #666;">
+                            <select aria-label="Select your interest" style="padding: 1rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none; background: #fff; color: #666;">
                                 <option>I am interested in</option>
                                 <option>2 BHK</option>
                                 <option>Jodi Flat</option>

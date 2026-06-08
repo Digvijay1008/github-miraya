@@ -29,6 +29,27 @@ document.addEventListener("DOMContentLoaded", () => {
     // 2. Initialize Lucide Icons
     lucide.createIcons();
 
+    // 2.5 Lazy-load hero video after page renders (keeps LCP as the poster image)
+    const heroVideo = document.querySelector('.hero-lazy-video');
+    const heroPoster = document.querySelector('.hero-poster-img');
+    if (heroVideo && heroPoster) {
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const source = heroVideo.querySelector('source[data-src]');
+                if (source) {
+                    source.src = source.getAttribute('data-src');
+                    heroVideo.load();
+                    heroVideo.play().then(() => {
+                        heroVideo.style.display = '';
+                        heroPoster.style.display = 'none';
+                    }).catch(() => {
+                        // Video autoplay blocked, keep poster visible
+                    });
+                }
+            }, 100);
+        });
+    }
+
     // 3. Header Scroll Effect
     const header = document.querySelector('.site-header');
     let isTicking = false;
