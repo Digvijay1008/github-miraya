@@ -202,31 +202,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // 7. Hero Day/Night View Switcher
-    const toggleBtns = document.querySelectorAll('.hero-toggle-btn');
-    const dayImg = document.querySelector('.hero-day');
-    const nightImg = document.querySelector('.hero-night');
-
-    if (toggleBtns.length > 0 && dayImg && nightImg) {
-        toggleBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const view = btn.getAttribute('data-view');
-                
-                // Toggle active class on buttons
-                toggleBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-
-                // Crossfade images
-                if (view === 'day') {
-                    dayImg.classList.add('active');
-                    nightImg.classList.remove('active');
-                } else {
-                    dayImg.classList.remove('active');
-                    nightImg.classList.add('active');
-                }
-            });
-        });
-    }
 
     // 8. Interactive Floor Plan Hotspots
     const hotspotBtns = document.querySelectorAll('.hotspot-btn');
