@@ -309,3 +309,38 @@ function closeLightbox() {
         lightbox.style.display = "none";
     }
 }
+
+// Global Floor Plan Reveal Function
+function revealFloorPlanAndPopup() {
+    // 1. Open the popup
+    const popup = document.getElementById('scrollPopup');
+    if (popup) {
+        popup.classList.add('active');
+    }
+
+    // 2. Reveal the floor plan (remove blur and overlay)
+    const blurDiv = document.getElementById('floorPlanBlur');
+    const overlayDiv = document.getElementById('floorPlanOverlay');
+    const planImg = document.getElementById('floorPlanImg');
+    const planWrap = document.getElementById('floorPlanWrap');
+
+    if (blurDiv) {
+        blurDiv.style.filter = 'none';
+        blurDiv.style.opacity = '1';
+    }
+    if (overlayDiv) {
+        overlayDiv.style.display = 'none';
+    }
+
+    // 3. Update click behavior to open the lightbox instead of the popup next time
+    if (planWrap && planImg) {
+        planWrap.onclick = null;
+        planWrap.title = "Click to enlarge";
+        planWrap.style.cursor = "zoom-in";
+        planImg.style.cursor = "zoom-in";
+        planImg.onclick = function(e) {
+            e.stopPropagation(); // prevent triggering other clicks
+            openLightbox(this.src);
+        };
+    }
+}

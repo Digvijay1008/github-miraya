@@ -56,7 +56,7 @@
 <body>
 
     <!-- Floating WhatsApp CTA -->
-    <a href="https://wa.me/919152087872?text=Hii" class="floating-whatsapp" aria-label="Chat on WhatsApp" style="display: flex; align-items: center; justify-content: center; background-color: #25D366; width: 60px; height: 60px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.15); position: fixed; bottom: 30px; right: 30px; z-index: 1000; transition: transform 0.3s ease;">
+    <a href="https://wa.me/919920387722?text=Hii" class="floating-whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; background-color: #25D366; width: 60px; height: 60px; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.15); position: fixed; bottom: 30px; right: 30px; z-index: 1000; transition: transform 0.3s ease;">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white" stroke="none">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
         </svg>
@@ -71,7 +71,8 @@
                 </a>
             </div>
             <nav class="desktop-nav">
-                <a href="#homes">Homes</a>
+                <a href="#" class="nav-home-link">By Trishabh Miraya</a>
+                <a href="#homes">Floor Plan</a>
                 <a href="#amenities">Amenities</a>
                 <a href="#location">Location</a>
                 <a href="#legacy">Legacy</a>
@@ -96,7 +97,7 @@
                 <i data-lucide="x" style="width: 28px; height: 28px; color: var(--charcoal);"></i>
             </button>
             <nav class="mobile-nav">
-                <a href="#homes" class="mobile-nav-link">Homes</a>
+                <a href="#homes" class="mobile-nav-link">Floor Plan</a>
                 <a href="#amenities" class="mobile-nav-link">Amenities</a>
                 <a href="#location" class="mobile-nav-link">Location</a>
                 <a href="#legacy" class="mobile-nav-link">Legacy</a>
@@ -143,12 +144,12 @@
                                 <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
                             </a>
                             <div class="flex gap-4" style="width: 100%; max-width: 480px;">
-                                <a href="tel:+919152087872" class="btn btn-outline flex-1"
+                                <a href="tel:+919920387722" class="btn btn-outline flex-1"
                                     style="justify-content: center; padding: 1.25rem 0; border-radius: 0; border-color: rgba(0, 59, 54, 0.4); font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">
                                     <i data-lucide="phone" style="width: 15px; height: 15px; margin-right: 8px;"></i> Call Now
                                 </a>
-                                <a href="https://wa.me/919152087872?text=Hii" class="btn btn-outline flex-1"
-                                    style="justify-content: center; padding: 1.25rem 0; border-radius: 0; border-color: rgba(0, 59, 54, 0.4); font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">
+                                <a href="https://wa.me/919920387722?text=Hii" class="btn btn-outline flex-1"
+                                    style="justify-content: center; padding: 1.25rem 0; border-radius: 0; border-color: rgba(0, 59, 54, 0.4); font-weight: 700; font-size: 0.85rem; text-transform: uppercase;" target="_blank" rel="noopener noreferrer">
                                     <i data-lucide="message-circle" style="width: 15px; height: 15px; margin-right: 8px;"></i> WhatsApp Now
                                 </a>
                             </div>
@@ -166,7 +167,7 @@
                 </div>
 
                 <h2 class="section-title reveal-text" style="max-width: 800px; margin-bottom: 2rem;">
-                    Miraya is for those who value what matters.
+                    Miraya is for those who value <span style="color: var(--gold); font-style: italic;">what matters.</span>
                 </h2>
 
                 <div class="split-layout-grid reveal-stagger" style="display: grid; gap: 4rem; align-items: start;">
@@ -300,10 +301,10 @@
                 <div class="homes-grid">
                     <!-- Left Column -->
                     <div class="homes-content">
-                        <h2 class="editorial-typography reveal-text">
-                            Flexi floor plans built<br>using advanced<br>PT slab design.
+                        <h2 class="editorial-typography reveal-text" style="font-size: clamp(2rem, 3vw, 2.5rem);">
+                            Flexi floor plans built<br>using <span style="color: var(--gold); font-style: italic;">advanced</span><br>PT slab design.
                         </h2>
-                        <div class="editorial-subheadline reveal-fade" style="color: var(--charcoal); font-weight: 400; font-style: normal; font-family: var(--font-body); max-width: 500px;">
+                        <div class="editorial-subheadline reveal-fade" style="color: var(--charcoal); font-weight: 400; font-style: normal; font-family: var(--font-body); max-width: 500px; font-size: 1.1rem; margin-top: 1rem;">
                             Thoughtfully designed 2 BHK homes with flexible layouts, zero wastage, and maximum comfort.
                         </div>
 
@@ -332,7 +333,6 @@
                                 </svg>
                             </div>
                             <div class="jodi-text">
-                                2 BHK options.<br>
                                 Jodi options available for 4 and 5 BHK configurations.
                             </div>
                         </div>
@@ -340,15 +340,20 @@
 
                     <!-- Right Column -->
                     <div class="homes-plan-card reveal-fade">
-                        <div class="plan-image-wrap">
-                            <img loading="lazy" src="images/TM Floor Plan-01.png" alt="2 BHK Floor Plan" class="w-full h-full object-contain cursor-zoom-in" onclick="openLightbox(this.src)" style="cursor: zoom-in;" title="Click to enlarge">
+                        <div class="plan-image-wrap" id="floorPlanWrap" style="position: relative; cursor: pointer;" onclick="revealFloorPlanAndPopup()" title="Click to view">
+                            <div id="floorPlanBlur" style="filter: blur(6px); opacity: 0.8; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; transition: filter 0.3s ease, opacity 0.3s ease;">
+                                <img id="floorPlanImg" loading="lazy" src="images/TM Floor Plan-01.png" alt="2 BHK Floor Plan" style="max-width: 80%; max-height: 250px; object-fit: contain;">
+                            </div>
+                            <div id="floorPlanOverlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                                <span style="background-color: var(--emerald-dark); color: white; padding: 0.8rem 1.8rem; border-radius: 30px; font-weight: 600; font-family: var(--font-heading); font-size: 1.1rem; box-shadow: 0 10px 25px rgba(0,0,0,0.15); border: 1px solid rgba(198, 160, 106, 0.4); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">Click to view</span>
+                            </div>
                         </div>
                         <div class="plan-specs" style="justify-content: center; gap: 3rem;">
                             <div class="spec-bhk" style="font-size: 1.75rem; color: var(--emerald-dark);">2 BHK</div>
                             <div class="spec-divider"></div>
                             <div class="spec-item" style="text-align: left;">
                                 <div style="font-size: 1.3rem; font-weight: 700; color: var(--charcoal); line-height: 1.2;">737 SQ.FT</div>
-                                <span class="spec-label" style="font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase;">Carpet Area</span>
+                                <span class="spec-label" style="font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase;">RERA Carpet Area</span>
                             </div>
                         </div>
                     </div>
@@ -388,9 +393,33 @@
                         <p>Every inch is thoughtfully<br>planned for your comfort.</p>
                     </div>
                 </div>
+                </div>
             </div>
         </section>
 
+        <!-- 05. Construction Update -->
+        <section id="construction" class="board-section section-padding bg-white relative">
+            <div class="container">
+                <div class="section-label mb-12 reveal-fade">
+                    <span class="label-num" style="color: var(--gold);">05</span> <span class="label-text">CONSTRUCTION UPDATE</span>
+                </div>
+
+                <div class="construction-grid" style="display: grid; grid-template-columns: 1fr; gap: 3rem;">
+                    <div class="construction-content" style="text-align: center;">
+                        <h2 class="editorial-typography reveal-text" style="font-size: clamp(2rem, 3vw, 3.5rem); line-height: 1.1; margin-bottom: 1rem;">
+                            Building your <span style="color: var(--gold); font-style: italic;">future</span> home.
+                        </h2>
+                        <p class="body-text reveal-fade mx-auto" style="max-width: 600px; margin-bottom: 2rem; margin-left: auto; margin-right: auto;">
+                            Stay updated with the latest progress at Trishabh Miraya. We are committed to timely delivery without compromising on quality.
+                        </p>
+                    </div>
+                    
+                    <div class="construction-media reveal-fade" style="width: 100%; max-width: 800px; height: 450px; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.15);">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sCP-iXs6gM0" title="Trishabh Miraya Construction Update" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display: block;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- 07. Amenities -->
         <section id="amenities" class="board-section section-padding bg-ivory relative">
@@ -541,9 +570,16 @@
                 <!-- RIGHT MAP PANEL -->
                 <div class="loc-map-panel reveal-fade">
                     <div class="loc-map-wrap" style="display: flex; flex-direction: column; position: relative; background-color: #1A2421;">
-                        <a href="https://share.google/bztnmPu63QH1N7R2z" target="_blank" rel="noopener noreferrer" style="display: flex; flex-direction: column; width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
-                            <div style="flex: 1; overflow: hidden; position: relative; min-height: 250px;">
-                                <img loading="lazy" src="images/extracted_brochure/page_11.png" alt="Trishabh Miraya Location Map — Chembur" class="loc-map-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                        <a href="https://maps.app.goo.gl/u7MQYy89FbmTV6cW6" target="_blank" rel="noopener noreferrer" style="display: flex; flex-direction: column; width: 100%; height: 100%; text-decoration: none; cursor: pointer;">
+                            <div style="flex: 1; overflow: hidden; position: relative; min-height: 250px; display: flex; align-items: center; justify-content: center; background: #000;">
+                                <img loading="lazy" src="images/extracted_brochure/page_11.png" alt="Trishabh Miraya Location Map — Chembur" class="loc-map-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.75; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='0.5'" onmouseout="this.style.opacity='0.75'">
+                                
+                                <!-- Click overlay button -->
+                                <div style="position: relative; z-index: 2; pointer-events: none; margin-bottom: 6rem;">
+                                    <span style="background-color: var(--emerald-dark); color: var(--white); padding: 0.8rem 1.8rem; border-radius: 30px; font-weight: 600; font-family: var(--font-heading); font-size: 1.1rem; box-shadow: 0 10px 25px rgba(0,0,0,0.3); border: 1px solid rgba(198, 160, 106, 0.4); display: flex; align-items: center; gap: 0.5rem; transition: transform 0.3s ease;">
+                                        <i data-lucide="map-pin" style="width: 18px; height: 18px;"></i> Click to view on map
+                                    </span>
+                                </div>
                             </div>
                             <div style="background-color: #1A2421; padding: 1.5rem 1rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05);">
                                 <p style="color: var(--gold); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.05em; margin: 0; line-height: 1.5; text-transform: uppercase; font-family: var(--font-body);">
@@ -690,102 +726,90 @@
         <!-- 11. Final CTA -->
         <section id="enquire" class="relative section-padding" style="background-color: var(--ivory); overflow: hidden; padding: 6rem 0 4rem;">
             
-            <!-- Background Image that fades into the left -->
-            <div class="cta-bg-image-wrapper" style="position: absolute; top: 0; right: 0; width: 55%; height: 90%; z-index: 1;">
-                <img loading="lazy" src="images/Miraya_Brochure-Print-07.jpg" alt="Miraya Interior" style="width: 100%; height: 100%; object-fit: cover; object-position: right center;">
-                <div class="cta-bg-fade-left" style="position: absolute; top: 0; left: 0; width: 40%; height: 100%; background: linear-gradient(to right, var(--ivory) 0%, transparent 100%);"></div>
-                <div class="cta-bg-fade-bottom" style="position: absolute; bottom: 0; left: 0; width: 100%; height: 40%; background: linear-gradient(to top, var(--ivory) 0%, transparent 100%);"></div>
-            </div>
-
             <div class="container relative" style="z-index: 5; max-width: 1400px; margin: 0 auto; padding: 0 2rem;">
                 
-                <!-- Top Text Content -->
-                <div class="cta-top-content" style="max-width: 550px; margin-bottom: 4rem;">
-                    <div class="section-label mb-8">
-                        <span class="label-num" style="color: var(--gold);">11</span> <span class="label-text" style="color: var(--emerald-dark); letter-spacing: 0.15em;">YOUR NEXT STEP</span>
-                    </div>
-
-                    <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(3.5rem, 5vw, 4.5rem); color: var(--emerald-dark); line-height: 1.1; margin-bottom: 2rem;">
-                        Everything<br>that matters.
-                    </h2>
+                <!-- 2-Column Grid for Text & Form -->
+                <div class="cta-grid-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; margin-bottom: 2rem;">
                     
-                    <p style="font-size: 1.1rem; line-height: 1.6; color: var(--charcoal); opacity: 0.8; margin-bottom: 3rem; max-width: 480px;">
-                        Register now to receive floor plans, current pricing, and schedule a private site visit. Our team is ready to assist you at every step.
-                    </p>
+                    <!-- Left Side: Top Text Content -->
+                    <div class="cta-top-content" style="max-width: 550px;">
+                        <div class="section-label mb-8">
+                            <span class="label-num" style="color: var(--gold);">11</span> <span class="label-text" style="color: var(--emerald-dark); letter-spacing: 0.15em;">YOUR NEXT STEP</span>
+                        </div>
 
-                    <!-- Icons Row -->
-                    <div class="cta-icons-row" style="display: flex; gap: 2.5rem; border-top: 1px solid rgba(198,160,106,0.3); border-bottom: 1px solid rgba(198,160,106,0.3); padding: 2rem 0;">
-                        <div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
-                            <div style="width: 45px; height: 45px; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--emerald-dark);">
-                                <i data-lucide="file-text" style="width: 20px; height: 20px;"></i>
-                            </div>
-                            <span style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--emerald-dark); line-height: 1.3;">Detailed<br>Floor Plans</span>
-                        </div>
-                        <div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
-                            <div style="width: 45px; height: 45px; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--emerald-dark);">
-                                <i data-lucide="indian-rupee" style="width: 20px; height: 20px;"></i>
-                            </div>
-                            <span style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--emerald-dark); line-height: 1.3;">Transparent<br>Pricing</span>
-                        </div>
-                        <div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
-                            <div style="width: 45px; height: 45px; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--emerald-dark);">
-                                <i data-lucide="badge-check" style="width: 20px; height: 20px;"></i>
-                            </div>
-                            <span style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--emerald-dark); line-height: 1.3;">Latest<br>Offers</span>
-                        </div>
-                        <div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
-                            <div style="width: 45px; height: 45px; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--emerald-dark);">
-                                <i data-lucide="headphones" style="width: 20px; height: 20px;"></i>
-                            </div>
-                            <span style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--emerald-dark); line-height: 1.3;">Expert<br>Assistance</span>
-                        </div>
-                    </div>
-                </div>
+                        <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(3.5rem, 5vw, 4.5rem); color: var(--emerald-dark); line-height: 1.1; margin-bottom: 2rem;">
+                            Everything<br>that matters.
+                        </h2>
+                        
+                        <p style="font-size: 1.1rem; line-height: 1.6; color: var(--charcoal); opacity: 0.8; margin-bottom: 3rem; max-width: 480px;">
+                            Register now to receive floor plans, current pricing, and schedule a private site visit. Our team is ready to assist you at every step.
+                        </p>
 
-                <!-- Floating Form Card -->
-                <div class="cta-floating-card" style="background: var(--white); border-radius: 12px; box-shadow: 0 30px 60px rgba(0,0,0,0.1); padding: 3.5rem; position: relative; z-index: 10; display: grid; grid-template-columns: 1fr 2.5fr; gap: 4rem; align-items: stretch;">
-                    
-                    <!-- Left Side of Form Card -->
-                    <div style="border-right: 1px solid rgba(0,0,0,0.1); padding-right: 3rem; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
-                                <div style="background: var(--emerald-dark); color: var(--gold); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                                    <i data-lucide="calendar" style="width: 24px; height: 24px;"></i>
+                        <!-- Icons Row -->
+                        <div class="cta-icons-row" style="display: flex; gap: 2.5rem; border-top: 1px solid rgba(198,160,106,0.3); border-bottom: 1px solid rgba(198,160,106,0.3); padding: 2rem 0;">
+                            <div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
+                                <div style="width: 45px; height: 45px; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--emerald-dark);">
+                                    <i data-lucide="file-text" style="width: 20px; height: 20px;"></i>
                                 </div>
-                                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--emerald-dark); margin: 0;">Book a Visit</h3>
+                                <span style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--emerald-dark); line-height: 1.3;">Detailed<br>Floor Plans</span>
                             </div>
-                            <p style="font-size: 0.95rem; line-height: 1.6; color: var(--charcoal); opacity: 0.8; margin-bottom: 2rem;">
-                                Visit our experience center and take a closer look at Miraya.
-                            </p>
+                            <div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
+                                <div style="width: 45px; height: 45px; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--emerald-dark);">
+                                    <i data-lucide="indian-rupee" style="width: 20px; height: 20px;"></i>
+                                </div>
+                                <span style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--emerald-dark); line-height: 1.3;">Transparent<br>Pricing</span>
+                            </div>
+                            <div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
+                                <div style="width: 45px; height: 45px; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--emerald-dark);">
+                                    <i data-lucide="badge-check" style="width: 20px; height: 20px;"></i>
+                                </div>
+                                <span style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--emerald-dark); line-height: 1.3;">Latest<br>Offers</span>
+                            </div>
+                            <div style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
+                                <div style="width: 45px; height: 45px; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--emerald-dark);">
+                                    <i data-lucide="headphones" style="width: 20px; height: 20px;"></i>
+                                </div>
+                                <span style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--emerald-dark); line-height: 1.3;">Expert<br>Assistance</span>
+                            </div>
                         </div>
-                        <a href="#enquire" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; width: 100%; padding: 1.1rem; border: 1px solid var(--gold); color: var(--gold); border-radius: 4px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; transition: 0.3s ease;">
-                            <i data-lucide="calendar-days" style="width: 18px; height: 18px;"></i> BOOK A SITE VISIT
-                        </a>
                     </div>
 
-                    <!-- Right Side (Form) -->
-                    <div>
-                        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--emerald-dark); margin-bottom: 2rem; margin-top: 0;">Get Floor Plans & Price Sheet</h3>
-                        <form style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem;">
-                            <input type="text" placeholder="Full Name" style="padding: 1rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none;">
-                            <input type="tel" placeholder="Phone Number" style="padding: 1rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none;">
-                            <input type="email" placeholder="Email Address" style="padding: 1rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none;">
+                    <!-- Right Side: Vertical Form Card -->
+                    <div class="cta-vertical-form-card" style="background: var(--white); border-radius: 12px; box-shadow: 0 30px 60px rgba(0,0,0,0.1); padding: 3.5rem; border-top: 4px solid var(--gold);">
+                        <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--emerald-dark); margin-bottom: 1.5rem; margin-top: 0;">Get Floor Plans & Price Sheet</h3>
+                        <form style="display: flex; flex-direction: column; gap: 0.85rem;">
+                            <input type="text" placeholder="Full Name" style="padding: 0.85rem 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.9rem; outline: none;">
+                            <input type="tel" placeholder="Phone Number" style="padding: 0.85rem 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.9rem; outline: none;">
+                            <input type="email" placeholder="Email Address" style="padding: 0.85rem 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.9rem; outline: none;">
                             
-                            <select aria-label="Select your interest" style="padding: 1rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none; background: #fff; color: #666;">
+                            <select aria-label="Select your interest" style="padding: 0.85rem 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.9rem; outline: none; background: #fff; color: #666;">
                                 <option>I am interested in</option>
                                 <option>2 BHK</option>
+                                <option>4 BHK</option>
+                                <option>5 BHK</option>
                                 <option>Jodi Flat</option>
                             </select>
                             
-                            <input type="text" placeholder="Message (Optional)" style="grid-column: span 2; padding: 1rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none;">
+                            <textarea placeholder="Message (Optional)" rows="2" style="padding: 0.85rem 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.9rem; outline: none; resize: vertical;"></textarea>
                             
-                            <div style="grid-column: span 3; display: flex; align-items: center; justify-content: space-between; margin-top: 1rem;">
-                                <label style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.85rem; color: var(--charcoal); opacity: 0.7; cursor: pointer;">
-                                    <input type="checkbox" checked style="width: 16px; height: 16px; accent-color: var(--emerald-dark);">
-                                    I agree to receive updates & offers from Trishabh Miraya.
+                            <!-- Google reCAPTCHA Placeholder -->
+                            <div style="background: #f9f9f9; border: 1px solid #d3d3d3; border-radius: 3px; padding: 0.6rem 0.85rem; display: flex; align-items: center; justify-content: space-between; margin-top: 0.25rem; width: 280px; box-shadow: 0 0 4px 1px rgba(0,0,0,0.08);">
+                                <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; font-weight: 500; color: #555; cursor: pointer; font-family: Roboto, sans-serif;">
+                                    <input type="checkbox" style="width: 20px; height: 20px; accent-color: #4a90e2; cursor: pointer;"> I'm not a robot
                                 </label>
-                                <button type="submit" style="background: var(--emerald-dark); color: var(--white); padding: 1.1rem 2rem; border-radius: 4px; border: none; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 0.5rem; cursor: pointer; transition: 0.3s ease;">
-                                    GET FLOOR PLANS & PRICE SHEET <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+                                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;">
+                                    <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA" style="width: 24px; height: 24px;">
+                                    <span style="font-size: 0.5rem; color: #999; font-family: Roboto, sans-serif;">reCAPTCHA</span>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-top: 0.25rem;">
+                                <label style="display: flex; align-items: flex-start; gap: 0.75rem; font-size: 0.85rem; color: var(--charcoal); opacity: 0.7; cursor: pointer;">
+                                    <input type="checkbox" checked style="width: 16px; height: 16px; accent-color: var(--emerald-dark); margin-top: 2px;">
+                                    <span>I agree to receive updates & offers from Trishabh Miraya.</span>
+                                </label>
+                                <button type="submit" style="background: var(--emerald-dark); color: var(--white); padding: 1rem 2rem; border-radius: 4px; border: none; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; justify-content: center; gap: 0.5rem; cursor: pointer; transition: 0.3s ease; width: 100%;">
+                                    SUBMIT <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
                                 </button>
                             </div>
                         </form>
@@ -796,24 +820,31 @@
                 <div class="cta-bottom-strip" style="display: flex; align-items: center; justify-content: space-between; border: 1px solid rgba(198,160,106,0.3); border-radius: 8px; padding: 1.5rem 3rem; margin-top: 2rem; background: rgba(255,255,255,0.6);">
                     <div style="display: flex; align-items: center; gap: 1rem;">
                         <div style="background: var(--emerald-dark); color: var(--white); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i data-lucide="mail" style="width: 14px; height: 14px;"></i>
+                        </div>
+                        <a href="mailto:sales@trishabh.com" style="font-size: 0.9rem; font-weight: 500; color: var(--charcoal); text-decoration: none; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">sales@trishabh.com</a>
+                    </div>
+                    <div style="width: 1px; height: 24px; background: rgba(198,160,106,0.3);"></div>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="background: var(--emerald-dark); color: var(--white); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
                             <i data-lucide="phone" style="width: 14px; height: 14px;"></i>
                         </div>
-                        <span style="font-size: 0.9rem; font-weight: 500; color: var(--charcoal);">Call us: +91 91520 87872</span>
+                        <a href="tel:+919920387722" style="font-size: 0.9rem; font-weight: 500; color: var(--charcoal); text-decoration: none; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">Call us: +91 99203 87722</a>
                     </div>
                     <div style="width: 1px; height: 24px; background: rgba(198,160,106,0.3);"></div>
                     <div style="display: flex; align-items: center; gap: 1rem;">
                         <div style="background: var(--emerald-dark); color: var(--white); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
                             <i data-lucide="message-circle" style="width: 14px; height: 14px;"></i>
                         </div>
-                        <span style="font-size: 0.9rem; font-weight: 500; color: var(--charcoal);">WhatsApp us</span>
+                        <a href="https://wa.me/919920387722?text=Hii" target="_blank" rel="noopener noreferrer" style="font-size: 0.9rem; font-weight: 500; color: var(--charcoal); text-decoration: none; transition: opacity 0.3s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">WhatsApp us</a>
                     </div>
                     <div style="width: 1px; height: 24px; background: rgba(198,160,106,0.3);"></div>
                     <div style="font-size: 0.9rem; font-weight: 500; color: var(--charcoal);">
-                        RERA No.: P51800055499
+                        MahaRERA No.: PR1181012502085
                     </div>
                     <div style="width: 1px; height: 24px; background: rgba(198,160,106,0.3);"></div>
                     <a href="#" style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; font-weight: 500; color: var(--charcoal); text-decoration: none;">
-                        WBRERA Website <i data-lucide="external-link" style="width: 14px; height: 14px; color: var(--emerald-dark);"></i>
+                        MahaRERA Website <i data-lucide="external-link" style="width: 14px; height: 14px; color: var(--gold);"></i>
                     </a>
                 </div>
 
@@ -877,19 +908,37 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img loading="lazy" src="images/Miraya_Logo_White.png" alt="Trishabh Miraya Logo" class="footer-logo" style="height: 70px; margin-bottom: 1rem;">
-                    <p class="footer-text"
-                        style="font-size: 0.65rem; letter-spacing: 0.15em; font-weight: 700; opacity: 0.6; margin-bottom: 0.5rem;">A PROJECT BY
-                    </p>
-                    <a href="https://www.trishabh.com/" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-bottom: 1.5rem;">
-                        <img loading="lazy" src="images/trishabh group logo.png" alt="Trishabh Group" class="footer-dev-logo" style="height: 65px;">
+                    <img loading="lazy" src="images/Miraya_Logo_White.png" alt="Trishabh Miraya Logo" class="footer-logo" style="height: 100px; margin-bottom: 1.5rem;">
+                    
+                    <div style="width: 120px; height: 1px; background-color: rgba(198, 160, 106, 0.6); margin-bottom: 1.5rem;"></div>
+                    
+                    <a href="https://www.trishabh.com/" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-bottom: 2rem;">
+                        <img loading="lazy" src="images/trishabh_group_logo_small.png" alt="Trishabh Group" class="footer-dev-logo" style="height: 90px;">
                     </a>
-                    <div>
-                        <a href="https://www.instagram.com/trishabhgroup/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.3); color: var(--white); transition: 0.3s ease;" title="Follow us on Instagram">
+                    <div style="display: flex; gap: 1.25rem; align-items: center;">
+                        <a href="https://www.facebook.com/trishabhgroup" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.6); color: #ffffff; transition: all 0.3s ease;" title="Follow us on Facebook" onmouseover="this.style.background='var(--gold)'; this.style.borderColor='var(--gold)'" onmouseout="this.style.background='transparent'; this.style.borderColor='rgba(255,255,255,0.6)'">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/trishabhgroup/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.6); color: #ffffff; transition: all 0.3s ease;" title="Follow us on Instagram" onmouseover="this.style.background='var(--gold)'; this.style.borderColor='var(--gold)'" onmouseout="this.style.background='transparent'; this.style.borderColor='rgba(255,255,255,0.6)'">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/trishabhgroup/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.6); color: #ffffff; transition: all 0.3s ease;" title="Follow us on LinkedIn" onmouseover="this.style.background='var(--gold)'; this.style.borderColor='var(--gold)'" onmouseout="this.style.background='transparent'; this.style.borderColor='rgba(255,255,255,0.6)'">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                              <rect x="2" y="9" width="4" height="12"/>
+                              <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCZrF5txujLLxM0YDXLqEVXg" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.6); color: #ffffff; transition: all 0.3s ease;" title="Follow us on YouTube" onmouseover="this.style.background='var(--gold)'; this.style.borderColor='var(--gold)'" onmouseout="this.style.background='transparent'; this.style.borderColor='rgba(255,255,255,0.6)'">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/>
+                              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
                             </svg>
                         </a>
                     </div>
@@ -917,11 +966,14 @@
                 <div>
                     <h4 class="footer-col-title">MahaRERA Registration</h4>
                     <p class="footer-text" style="margin-bottom: 1rem;">
-                        MAHA RERA NO: P51800055499
+                        MAHA RERA NO: PR1181012502085
                     </p>
-                    <a href="https://maharerait.maharashtra.gov.in/project/view/60838" target="_blank" rel="noopener noreferrer" style="font-size: 0.75rem; opacity: 0.7; color: var(--ivory); text-decoration: underline; transition: 0.3s ease; display: inline-block;">
+                    <a href="https://maharerait.maharashtra.gov.in/project/view/60838" target="_blank" rel="noopener noreferrer" style="font-size: 0.75rem; opacity: 0.7; color: var(--ivory); text-decoration: underline; transition: 0.3s ease; display: inline-block; margin-bottom: 1.5rem;">
                         Available on the MAHARERA website under registered projects.
                     </a>
+                    <div>
+                        <img loading="lazy" src="images/qr-code.jpeg" alt="MahaRERA QR Code" style="width: 110px; height: 110px; background: white; padding: 4px; border-radius: 4px;">
+                    </div>
                 </div>
 
                 <div class="footer-disclaimer">
