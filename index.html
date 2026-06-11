@@ -64,13 +64,10 @@
 
     <header class="site-header">
         <div class="container header-inner">
-            <div class="logo" style="display: flex; align-items: center; gap: 1rem;">
+            <!-- Left: Miraya Logo only -->
+            <div class="logo">
                 <a href="#">
                     <img src="images/Miraya_Logo_small.png" alt="Trishabh Miraya" class="logo-img" width="150" height="97">
-                </a>
-                <span style="font-size: 0.85rem; color: var(--emerald-dark); opacity: 0.4; font-weight: 400; font-family: sans-serif;">✕</span>
-                <a href="https://www.trishabh.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="images/trishabh_group_logo_small.png" alt="Trishabh Group" class="logo-img-secondary" width="135" height="72">
                 </a>
             </div>
             <nav class="desktop-nav">
@@ -79,8 +76,12 @@
                 <a href="#location">Location</a>
                 <a href="#legacy">Legacy</a>
             </nav>
-            <div class="header-actions" style="display: flex; align-items: center; gap: 1rem;">
+            <!-- Right: Enquire Now + Trishabh Group logo (appears on scroll) -->
+            <div class="header-actions" style="display: flex; align-items: center; gap: 1.25rem;">
                 <button class="btn btn-primary nav-cta" onclick="document.getElementById('scrollPopup').classList.add('active');" style="cursor: pointer;">Enquire Now</button>
+                <a href="https://www.trishabh.com/" target="_blank" rel="noopener noreferrer" class="header-trishabh-logo" aria-label="Trishabh Group">
+                    <img src="images/trishabh_group_logo_small.png" alt="Trishabh Group" class="logo-img-secondary" width="135" height="72">
+                </a>
                 <button class="mobile-menu-btn" aria-label="Toggle Menu">
                     <i data-lucide="menu" style="width: 28px; height: 28px; color: var(--emerald-dark);"></i>
                 </button>
@@ -233,15 +234,15 @@
                 <div class="matters-grid">
                     <!-- Left Column -->
                     <div class="matters-content">
-                        <h2 class="editorial-typography reveal-text" style="font-size: clamp(2rem, 3vw, 3.5rem); margin-bottom: 0.5rem; line-height: 1.2;">
+                        <h2 class="editorial-typography reveal-text">
                             The <span style="color: var(--gold); font-style: italic;">right</span> location.<br>
                             The <span style="color: var(--gold); font-style: italic;">right</span> planning.<br>
                             The <span style="color: var(--gold); font-style: italic;">right</span> comfort.
                         </h2>
 
-                        <div class="editorial-subheadline reveal-fade" style="font-size: clamp(1.5rem, 2.5vw, 2.5rem); margin-bottom: 2.5rem;">Not more. Just right.</div>
+                        <div class="editorial-subheadline reveal-fade">Not more. Just right.</div>
 
-                        <p class="body-text reveal-fade" style="max-width: 420px; font-size: 1.15rem; line-height: 1.6; margin-bottom: 4rem;">
+                        <p class="body-text reveal-fade" style="max-width: 420px;">
                             Miraya brings together the essentials of modern urban living — without unnecessary excess.
                         </p>
 
@@ -290,7 +291,7 @@
         </section>
 
         <!-- 04. Well-Designed Homes -->
-        <section id="homes" class="board-section section-padding bg-ivory relative" style="padding-top: 120px; padding-bottom: 120px;">
+        <section id="homes" class="board-section section-padding bg-ivory relative" style="padding-top: 60px; padding-bottom: 60px;">
             <div class="container">
                 <div class="section-label mb-12 reveal-fade">
                     <span class="label-num" style="color: var(--gold);">04</span> <span class="label-text">WELL-DESIGNED HOMES</span>
@@ -299,10 +300,10 @@
                 <div class="homes-grid">
                     <!-- Left Column -->
                     <div class="homes-content">
-                        <h2 class="editorial-typography reveal-text" style="font-size: clamp(2.5rem, 4.5vw, 4.5rem); line-height: 1.15; margin-bottom: 1.5rem;">
+                        <h2 class="editorial-typography reveal-text">
                             Flexi floor plans built<br>using advanced<br>PT slab design.
                         </h2>
-                        <div class="editorial-subheadline reveal-fade" style="font-size: clamp(1.4rem, 2vw, 1.8rem); color: var(--charcoal); margin-bottom: 3rem; max-width: 500px; line-height: 1.5; font-weight: 400; font-style: normal; font-family: var(--font-body);">
+                        <div class="editorial-subheadline reveal-fade" style="color: var(--charcoal); font-weight: 400; font-style: normal; font-family: var(--font-body); max-width: 500px;">
                             Thoughtfully designed 2 BHK homes with flexible layouts, zero wastage, and maximum comfort.
                         </div>
 
@@ -579,15 +580,15 @@
 
                         <div class="legacy-stats-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem 2rem;">
                             <div class="legacy-stat-item" style="border-left: 2px solid var(--gold); padding-left: 1.5rem;">
-                                <div class="legacy-stat-num" style="font-family: 'Outfit', sans-serif; font-size: clamp(3rem, 4vw, 4.5rem); font-weight: 400; color: var(--gold); line-height: 1;">27</div>
+                                <div class="legacy-stat-num" style="font-family: 'Outfit', sans-serif; font-size: clamp(2rem, 3vw, 3rem); font-weight: 400; color: var(--gold); line-height: 1;">27</div>
                                 <div class="legacy-stat-label" style="font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); font-weight: 600; margin-top: 0.75rem; opacity: 0.9; line-height: 1.4;">Years of<br>Legacy</div>
                             </div>
                             <div class="legacy-stat-item" style="border-left: 2px solid var(--gold); padding-left: 1.5rem;">
-                                <div class="legacy-stat-num" style="font-family: 'Outfit', sans-serif; font-size: clamp(3rem, 4vw, 4.5rem); font-weight: 400; color: var(--gold); line-height: 1;">15+</div>
+                                <div class="legacy-stat-num" style="font-family: 'Outfit', sans-serif; font-size: clamp(2rem, 3vw, 3rem); font-weight: 400; color: var(--gold); line-height: 1;">15+</div>
                                 <div class="legacy-stat-label" style="font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); font-weight: 600; margin-top: 0.75rem; opacity: 0.9; line-height: 1.4;">Projects<br>Delivered</div>
                             </div>
                             <div class="legacy-stat-item" style="border-left: 2px solid var(--gold); padding-left: 1.5rem;">
-                                <div class="legacy-stat-num" style="font-family: 'Outfit', sans-serif; font-size: clamp(3rem, 4vw, 4.5rem); font-weight: 400; color: var(--gold); line-height: 1;">100%</div>
+                                <div class="legacy-stat-num" style="font-family: 'Outfit', sans-serif; font-size: clamp(2rem, 3vw, 3rem); font-weight: 400; color: var(--gold); line-height: 1;">100%</div>
                                 <div class="legacy-stat-label" style="font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); font-weight: 600; margin-top: 0.75rem; opacity: 0.9; line-height: 1.4;">OC Received<br>Track Record</div>
                             </div>
                         </div>
