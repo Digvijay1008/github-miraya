@@ -86,14 +86,14 @@ p {
 }
 
 .section-padding {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 @media (max-width: 1024px) {
   .section-padding {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
   }
 }
 
@@ -310,12 +310,13 @@ p {
 }
 
 .section-title {
-  font-size: clamp(2.5rem, 4.5vw, 4.5rem);
-  /* scales 40px to 72px */
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  /* scales 32px to 51px — matches loc-serif-title style */
   line-height: 1.1;
   letter-spacing: -0.02em;
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .body-text {
@@ -1640,7 +1641,7 @@ p {
   position: relative;
   border-radius: 4px;
   overflow: hidden;
-  height: 340px;
+  height: 270px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
   transition: var(--transition-smooth);
 }
