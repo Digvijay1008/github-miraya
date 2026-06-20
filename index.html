@@ -1020,7 +1020,7 @@
                             <input type="hidden" name="access_key" value="99591e99-9e7c-4eb8-ae7a-617a05f42950">
                             <input type="text" name="name" placeholder="Full Name" required
                                 style="padding: 0.85rem 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.9rem; outline: none;">
-                            <input type="tel" name="phone" placeholder="Phone Number" required
+                            <input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '')" minlength="10" maxlength="15"
                                 style="padding: 0.85rem 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.9rem; outline: none;">
                             <input type="email" name="email" placeholder="Email Address"
                                 style="padding: 0.85rem 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.9rem; outline: none;">
@@ -1037,8 +1037,12 @@
                             <textarea name="message" placeholder="Message (Optional)" rows="2"
                                 style="padding: 0.85rem 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.9rem; outline: none; resize: vertical;"></textarea>
 
-                            <!-- Web3Forms hCaptcha Widget -->
-                            <div class="h-captcha" data-captcha="true"></div>
+                            <!-- Visible Math Captcha -->
+                            <div style="display: flex; flex-direction: column; gap: 0.35rem;">
+                                <label id="math-captcha-label-1" style="font-size: 0.85rem; color: var(--charcoal); font-weight: 500;">Security Check: What is 3 + 4?</label>
+                                <input type="text" id="math-captcha-input-1" name="captcha_verification" placeholder="Enter the sum" required pattern="7" title="Please answer 7 to verify you are human"
+                                    style="padding: 0.85rem 1rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.9rem; outline: none;">
+                            </div>
 
                             <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-top: 0.25rem;">
                                 <label
@@ -1335,13 +1339,17 @@
                         <input type="hidden" name="access_key" value="99591e99-9e7c-4eb8-ae7a-617a05f42950">
                         <input type="text" name="name" placeholder="Full Name" required
                             style="padding: 0.85rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none; box-sizing: border-box;">
-                        <input type="tel" name="phone" placeholder="Phone Number" required
+                        <input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '')" minlength="10" maxlength="15"
                             style="padding: 0.85rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none; box-sizing: border-box;">
                         <input type="email" name="email" placeholder="Email Address"
                             style="padding: 0.85rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none; box-sizing: border-box;">
 
-                        <!-- Web3Forms hCaptcha Widget -->
-                        <div class="h-captcha" data-captcha="true"></div>
+                        <!-- Visible Math Captcha -->
+                        <div style="display: flex; flex-direction: column; gap: 0.35rem;">
+                            <label id="math-captcha-label-2" style="font-size: 0.9rem; color: var(--charcoal); font-weight: 500;">Security Check: What is 5 + 2?</label>
+                            <input type="text" id="math-captcha-input-2" name="captcha_verification" placeholder="Enter the sum" required pattern="7" title="Please answer 7 to verify you are human"
+                                style="padding: 0.85rem 1.25rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 4px; width: 100%; font-size: 0.95rem; outline: none; box-sizing: border-box;">
+                        </div>
 
                         <button type="submit" class="btn btn-primary"
                             style="width: 100%; justify-content: center; margin-top: 0.5rem; border-radius: 4px; padding: 1rem;">Get
@@ -1351,6 +1359,29 @@
             </div>
         </div>
     </div>
+    <script>
+        // Dynamic Math Captcha
+        document.addEventListener('DOMContentLoaded', function () {
+            function setupCaptcha(labelId, inputId) {
+                const label = document.getElementById(labelId);
+                const input = document.getElementById(inputId);
+                if (label && input) {
+                    const num1 = Math.floor(Math.random() * 9) + 1;
+                    const num2 = Math.floor(Math.random() * 9) + 1;
+                    const sum = num1 + num2;
+                    
+                    label.textContent = `Security Check: What is ${num1} + ${num2}?`;
+                    input.setAttribute('pattern', sum.toString());
+                    input.setAttribute('title', `Please answer ${sum} to verify you are human`);
+                    input.value = ''; // clear on reload
+                }
+            }
+
+            // Setup for both forms
+            setupCaptcha('math-captcha-label-1', 'math-captcha-input-1');
+            setupCaptcha('math-captcha-label-2', 'math-captcha-input-2');
+        });
+    </script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 
