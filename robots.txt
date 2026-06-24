@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.trishabh.com/miraya/sitemap.xml
+Sitemap: https://trishabhmiraya.com/sitemap.xml
