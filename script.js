@@ -343,3 +343,22 @@ function revealFloorPlanAndPopup(wrapElement) {
         };
     }
 }
+
+// Floor Plan Auto Slider
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.plan-slide');
+    if (slides.length > 0) {
+        let currentSlide = 0;
+        setInterval(() => {
+            slides[currentSlide].style.opacity = '0';
+            slides[currentSlide].style.pointerEvents = 'none';
+            slides[currentSlide].classList.remove('active');
+            
+            currentSlide = (currentSlide + 1) % slides.length;
+            
+            slides[currentSlide].style.opacity = '1';
+            slides[currentSlide].style.pointerEvents = 'auto';
+            slides[currentSlide].classList.add('active');
+        }, 3000);
+    }
+});

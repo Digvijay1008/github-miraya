@@ -425,8 +425,9 @@
                     </div>
 
                     <!-- Right Column -->
-                    <div style="display: flex; flex-direction: column; gap: 2rem;">
-                        <div class="homes-plan-card reveal-fade">
+                    <div class="homes-plan-slider reveal-fade" style="position: relative;">
+                        <!-- Slide 1: 2 BHK -->
+                        <div class="homes-plan-card plan-slide active" style="transition: opacity 0.5s ease; opacity: 1;">
                             <div class="plan-image-wrap" style="position: relative; cursor: pointer;"
                                 onclick="revealFloorPlanAndPopup(this)" title="Click to view">
                                 <div class="floorPlanBlur"
@@ -458,7 +459,8 @@
                             </div>
                         </div>
 
-                        <div class="homes-plan-card reveal-fade">
+                        <!-- Slide 2: 4 BHK -->
+                        <div class="homes-plan-card plan-slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; transition: opacity 0.5s ease; opacity: 0; pointer-events: none; margin: 0;">
                             <div class="plan-image-wrap" style="position: relative; cursor: pointer;"
                                 onclick="revealFloorPlanAndPopup(this)" title="Click to view">
                                 <div class="floorPlanBlur"
@@ -489,7 +491,8 @@
                             </div>
                         </div>
 
-                        <div class="homes-plan-card reveal-fade">
+                        <!-- Slide 3: 4.5 BHK -->
+                        <div class="homes-plan-card plan-slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; transition: opacity 0.5s ease; opacity: 0; pointer-events: none; margin: 0;">
                             <div class="plan-image-wrap" style="position: relative; cursor: pointer;"
                                 onclick="revealFloorPlanAndPopup(this)" title="Click to view">
                                 <div class="floorPlanBlur"
