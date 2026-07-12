@@ -311,7 +311,7 @@ function closeLightbox() {
 }
 
 // Global Floor Plan Reveal Function
-function revealFloorPlanAndPopup() {
+function revealFloorPlanAndPopup(wrapElement) {
     // 1. Open the popup
     const popup = document.getElementById('scrollPopup');
     if (popup) {
@@ -319,10 +319,9 @@ function revealFloorPlanAndPopup() {
     }
 
     // 2. Reveal the floor plan (remove blur and overlay)
-    const blurDiv = document.getElementById('floorPlanBlur');
-    const overlayDiv = document.getElementById('floorPlanOverlay');
-    const planImg = document.getElementById('floorPlanImg');
-    const planWrap = document.getElementById('floorPlanWrap');
+    const blurDiv = wrapElement.querySelector('.floorPlanBlur');
+    const overlayDiv = wrapElement.querySelector('.floorPlanOverlay');
+    const planImg = wrapElement.querySelector('.floorPlanImg');
 
     if (blurDiv) {
         blurDiv.style.filter = 'none';
@@ -333,10 +332,10 @@ function revealFloorPlanAndPopup() {
     }
 
     // 3. Update click behavior to open the lightbox instead of the popup next time
-    if (planWrap && planImg) {
-        planWrap.onclick = null;
-        planWrap.title = "Click to enlarge";
-        planWrap.style.cursor = "zoom-in";
+    if (planImg) {
+        wrapElement.onclick = null;
+        wrapElement.title = "Click to enlarge";
+        wrapElement.style.cursor = "zoom-in";
         planImg.style.cursor = "zoom-in";
         planImg.onclick = function(e) {
             e.stopPropagation(); // prevent triggering other clicks
