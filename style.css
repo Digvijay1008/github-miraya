@@ -2773,3 +2773,21 @@ p {
         }
     }
 }
+
+/* Floor Plans Mobile Scroll */
+@media (max-width: 768px) {
+    .floor-plans-grid {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 1.5rem;
+        gap: 1rem !important;
+        -webkit-overflow-scrolling: touch;
+    }
+    .floor-plans-grid .homes-plan-card {
+        flex: 0 0 85%;
+        scroll-snap-align: center;
+        min-width: 250px;
+    }
+}
