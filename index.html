@@ -11,12 +11,24 @@
     </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EG64K4F4K9"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18559386280"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-EG64K4F4K9');
+      gtag('config', 'AW-18559386280');
+    </script>
+    <!-- Event snippet for Submit lead form (1) conversion page -->
+    <script>
+      function reportLeadConversion() {
+        if (typeof gtag === 'function') {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-18559386280/2StbCJ-XkrodEKiF55FF'
+          });
+        }
+      }
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1129,7 +1141,7 @@
                         <h3
                             style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--emerald-dark); margin-bottom: 1.5rem; margin-top: 0;">
                             Get Floor Plans & Price Sheet</h3>
-                        <form action="https://api.web3forms.com/submit" method="POST"
+                        <form action="https://api.web3forms.com/submit" method="POST" onsubmit="reportLeadConversion()"
                             style="display: flex; flex-direction: column; gap: 0.85rem;">
                             <input type="hidden" name="access_key" value="99591e99-9e7c-4eb8-ae7a-617a05f42950">
                             <input type="text" name="name" placeholder="Full Name *" required
@@ -1448,7 +1460,7 @@
                         Register now to get instant access to our detailed floor plans, Jodi configurations, and latest
                         pricing.</p>
 
-                    <form action="https://api.web3forms.com/submit" method="POST"
+                    <form action="https://api.web3forms.com/submit" method="POST" onsubmit="reportLeadConversion()"
                         style="display: flex; flex-direction: column; gap: 0.5rem;">
                         <input type="hidden" name="access_key" value="99591e99-9e7c-4eb8-ae7a-617a05f42950">
                         <input type="text" name="name" placeholder="Full Name *" required
@@ -1515,6 +1527,15 @@
             // Setup for both forms
             setupCaptcha('math-captcha-label-1', 'math-captcha-input-1');
             setupCaptcha('math-captcha-label-2', 'math-captcha-input-2');
+
+            // Google Ads Conversion tracking for lead form submissions
+            document.querySelectorAll('form[action*="web3forms"]').forEach(function (form) {
+                form.addEventListener('submit', function () {
+                    if (typeof reportLeadConversion === 'function') {
+                        reportLeadConversion();
+                    }
+                });
+            });
         });
     </script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
