@@ -21,6 +21,12 @@
       gtag('config', 'G-EG64K4F4K9');
       gtag('config', 'AW-18559386280');
     </script>
+    <!-- Phone Call Conversion Tracking -->
+    <script>
+      gtag('config', 'AW-18559386280/rj85CLG6krodEKiF55FF', {
+        'phone_conversion_number': '+91 99203 87722'
+      });
+    </script>
     <!-- Event snippet for Submit lead form (1) conversion page -->
     <script>
       function reportLeadConversion() {
@@ -1530,12 +1536,41 @@
             setupCaptcha('math-captcha-label-1', 'math-captcha-input-1');
             setupCaptcha('math-captcha-label-2', 'math-captcha-input-2');
 
-            // Google Ads Conversion tracking for lead form submissions
+            // Google Ads Conversion tracking for lead form submissions - fires only on success
             document.querySelectorAll('form[action*="web3forms"]').forEach(function (form) {
-                form.addEventListener('submit', function () {
-                    if (typeof reportLeadConversion === 'function') {
-                        reportLeadConversion();
-                    }
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    var formData = new FormData(form);
+                    fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(function(response) { return response.json(); })
+                    .then(function(data) {
+                        if (data.success) {
+                            // Fire Google Ads lead form conversion
+                            if (typeof reportLeadConversion === 'function') {
+                                reportLeadConversion();
+                            }
+                            // Show success message
+                            form.reset();
+                            var btn = form.querySelector('button[type="submit"]');
+                            if (btn) {
+                                var orig = btn.innerHTML;
+                                btn.innerHTML = '✓ Submitted! We\'ll call you soon.';
+                                btn.style.background = '#2d6a4f';
+                                setTimeout(function() {
+                                    btn.innerHTML = orig;
+                                    btn.style.background = '';
+                                }, 4000);
+                            }
+                        } else {
+                            alert('Something went wrong. Please try again.');
+                        }
+                    })
+                    .catch(function() {
+                        alert('Network error. Please try again.');
+                    });
                 });
             });
         });
